@@ -1,24 +1,14 @@
-# README
+# OpenDoor
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+OpenDoor is a platform to manage data gathering to feed a InterSCity platform
+instance.
 
-Things you may want to cover:
+# Setup
 
-* Ruby version
+1 - Install Ruby (we use mainly version '2.3.1')
+2 - Install the gems that we use (`bundle install` inside the project folder)
+3 - Run the server: `rails server`
 
-* System dependencies
+# Running tests
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+We use mainly `rspec` to write the tests.
