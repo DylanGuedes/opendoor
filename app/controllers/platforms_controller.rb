@@ -20,6 +20,11 @@ class PlatformsController < ApplicationController
     @platform = Platform.find(params[:id])
   end
 
+  def set_instance
+    cookies[:instance_id] = params[:platform_id]
+    redirect_to platforms_path
+  end
+
   private
 
   def platform_params
