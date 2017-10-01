@@ -12,7 +12,7 @@ class PlatformsController < ApplicationController
     if @platform.save
       redirect_to @platform
     else
-      redirect_to :new
+      redirect_to new_platform_path
     end
   end
 
