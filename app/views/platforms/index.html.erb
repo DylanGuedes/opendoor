@@ -1,0 +1,23 @@
+<div class="main ui container">
+  <div class="ui header">
+    Platforms
+  </div>
+
+  <div class="ui relaxed divided list">
+    <% @platforms.each do |p| %>
+      <div class="item">
+        <div class="content">
+        <a class="header"><%= link_to "#{p.url}", p %></a>
+          <div class="description"><%= p.description %></div>
+          <div class="extra">Created at <%= p.created_at %></div>
+        </div>
+      </div>
+    <% end %>
+
+    <div class="ui">
+      <a class="positive small ui button" href="/platforms/new">
+        New Instance
+      </a>
+    </div>
+  </div>
+</div>
