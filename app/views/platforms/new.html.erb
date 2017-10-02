@@ -1,0 +1,19 @@
+<div class="main ui container">
+  <div class="ui header">
+    New Platform Instance
+  </div>
+
+  <%= form_for @platform, html: {class: 'ui form'} do |f| %>
+    <div class="ui field">
+      <label>URL</label>
+      <%= f.text_field :url %>
+    </div>
+
+    <div class="ui field">
+      <label>Description</label>
+      <%= f.text_field :description %>
+    </div>
+
+    <%= f.submit class: 'ui button' %>
+  <% end %>
+</div>

@@ -9,6 +9,16 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "application/header" %>
+
+    <div class="ui grid">
+      <div class="four wide column">
+        <%= render "application/sidebar" %>
+      </div>
+
+      <div class="eight wide column">
+        <%= yield %>
+      </div>
+    </div>
   </body>
 </html>

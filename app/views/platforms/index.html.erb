@@ -1,0 +1,33 @@
+<div class="main ui container">
+  <div class="ui header">
+    Platforms
+  </div>
+
+  <div class="ui relaxed divided list">
+    <% @platforms.each do |p| %>
+      <div class="item">
+
+      <% if p.id.to_s == cookies[:instance_id].to_s %>
+        <a class="ui green ribbon label">S</a>
+      <% end %>
+
+        <div class="content">
+        <a class="header"><%= link_to "#{p.url}", p %></a>
+          <div class="description"><%= p.description %></div>
+          <div class="extra">Created at <%= p.created_at %></div>
+
+          <div class="ui icon buttons">
+            <button class="ui icon button">
+              <i class="icon settings"></i>
+            </button>
+            <button class="ui icon green button">
+              <%= link_to "/set_platform/#{p.id}", class: "icon marker" do %>
+                <i class="icon marker"></i>
+              <% end %>
+            </button>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
