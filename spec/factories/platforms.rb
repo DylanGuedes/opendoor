@@ -8,4 +8,6 @@ FactoryGirl.define do
       resource []
     end
   end
+  factory :parser do
+  end
 end
