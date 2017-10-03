@@ -3,4 +3,9 @@ FactoryGirl.define do
     url 'myniceurl.com'
     description 'myniceplatform'
   end
+  factory :collector do
+    trait :unpopulated do
+      resource []
+    end
+  end
 end
