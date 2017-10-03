@@ -3,7 +3,6 @@ FactoryGirl.define do
     url 'myniceurl.com'
     description 'myniceplatform'
   end
-
   factory :parser do
   end
   factory :collector do
