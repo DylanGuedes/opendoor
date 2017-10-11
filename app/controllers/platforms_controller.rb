@@ -21,7 +21,7 @@ class PlatformsController < ApplicationController
   end
 
   def set_instance
-    cookies[:instance_id] = params[:platform_id]
+    cookies.permanent[:instance_id] = params[:platform_id]
     redirect_to platforms_path
   end
 
