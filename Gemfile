@@ -59,3 +59,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'semantic-ui-sass'
 gem 'jquery-rails'
 gem 'rails-controller-testing'
+gem 'sidekiq'
+gem 'mechanize'
+gem 'rest-client'
+gem 'colorize'
+gem 'webmock', require: false

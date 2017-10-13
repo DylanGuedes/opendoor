@@ -3,31 +3,24 @@
     Platforms
   </div>
 
-  <div class="ui relaxed divided list">
+  <div class="ui middle aligned selection list">
     <% @platforms.each do |p| %>
       <div class="item">
-
-      <% if p.id.to_s == cookies[:instance_id].to_s %>
-        <a class="ui green ribbon label">S</a>
-      <% end %>
+        <div class="right floated content">
+          <% if p.id.to_s == cookies[:instance_id].to_s %>
+            <button class="ui button green">Selected</button>
+          <% else %>
+            <%= link_to "/set_platform/#{p.id}", class: "ui teal small labeled icon button" do %>
+              <i class="add icon"></i>Select
+            <% end %>
+          <% end %>
+        </div>
 
         <div class="content">
-        <a class="header"><%= link_to "#{p.url}", p %></a>
+          <a class="header"><%= link_to "#{p.url}", p %></a>
           <div class="description"><%= p.description %></div>
           <div class="extra">Created at <%= p.created_at %></div>
-
-          <div class="ui icon buttons">
-            <button class="ui icon button">
-              <i class="icon settings"></i>
-            </button>
-            <button class="ui icon green button">
-              <%= link_to "/set_platform/#{p.id}", class: "icon marker" do %>
-                <i class="icon marker"></i>
-              <% end %>
-            </button>
-          </div>
         </div>
       </div>
-    <% end %>
+      <% end %>
   </div>
-</div>

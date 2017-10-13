@@ -1,6 +1,6 @@
 FactoryGirl.define do
   factory :platform do
-    url 'myniceurl.com'
+    url 'localhost:8000'
     description 'myniceplatform'
   end
   factory :parser do
