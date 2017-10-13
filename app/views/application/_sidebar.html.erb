@@ -34,4 +34,19 @@
       </a>
     </div>
   </div>
+
+  <div class="item">
+    <div class="header">Crons</div>
+
+    <div class="menu">
+      <a class="item" href="/resources/active_cetesb_cron">
+        Cetesb Cron
+        <% if CetesbGathererWorker.cron_running %>
+          <i class="green checkmark icon"></i>
+        <% else %>
+          <i class="remove red icon"></i>
+        <% end %>
+      </a>
+    </div>
+  </div>
 </div>
