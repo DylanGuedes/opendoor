@@ -5,15 +5,16 @@ Sidekiq::Testing.inline!
 RSpec.describe CetesbGathererWorker, type: :worker do
   describe 'normal job scheduling' do
     it 'should create resources' do
-      FactoryGirl.create(:platform)
-      # id = Platform.all[0].id
-      # puts "ID HERE #{id}"
-      # puts "PLATFORM: #{Platform.find(id)}"
-      # Sidekiq::Testing.inline! do
-      #   expect {
-      #     CetesbGathererWorker.perform_async(AirQuality.workers[:cetesb_gatherer_worker], id)
-      #   }.to change(AirQuality.count, :size).by(1)
-      # end
+      id = FactoryGirl.create(:platform).id
+      Sidekiq::Testing.inline! do
+        old_count = AirQuality.count
+        CetesbGathererWorker.new.perform(AirQuality.workers[:cetesb_gatherer_worker], id)
+        expect(AirQuality.count).not_to eq(old_count)
+
+        old_count = AirQuality.count
+        CetesbGathererWorker.new.perform(AirQuality.workers[:cetesb_gatherer_worker], id)
+        expect(AirQuality.count).to eq(old_count)
+      end
     end
   end
 end

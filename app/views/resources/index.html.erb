@@ -1,0 +1,20 @@
+<div class="main ui container">
+  <div class="ui header">
+    Resources
+  </div>
+
+  <div class="ui middle aligned selection list">
+    <% @resources.each do |p| %>
+      <div class="item">
+        <%= p.uuid %>
+        <div class="content">
+          <div class="description">
+            Registered in <%= p.platform.url %>
+          </div>
+          <div class="extra">
+            <%= p.worker_uuid %>
+          </div>
+        </div>
+      </div>
+      <% end %>
+  </div>

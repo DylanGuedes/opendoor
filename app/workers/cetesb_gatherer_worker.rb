@@ -4,7 +4,6 @@ class CetesbGathererWorker
   include Sidekiq::Worker
 
   def perform(collector_id, platform_id)
-    puts "perform.."
     url_cetesb = "http://sistemasinter.cetesb.sp.gov.br/Ar/php/ar_resumo_hora.php"
     agent = Mechanize.new
     page = agent.get(url_cetesb)
@@ -13,7 +12,6 @@ class CetesbGathererWorker
 
     table.element_children.each do |line|
       next if line.element_children.empty?
-      puts "testando uma linha..."
 
       data = line.element_children
 
@@ -39,12 +37,18 @@ class CetesbGathererWorker
         timestamp: timestamp
       }
 
-      resource = AirQuality.find_by(worker: :cetesb_gatherer_worker, worker_uuid: doc[:region], platform_id: platform_id)
+      resource = AirQuality.find_by(worker: AirQuality.workers[:cetesb_gatherer_worker], worker_uuid: doc[:region], platform_id: platform_id)
       if resource
-        puts "found..."
+        new_data = {
+          air_quality: [{value: doc[:quality], timestamp: doc[:timestamp]}],
+          polluting: [{value: doc[:polluting], timestamp: doc[:timestamp]}],
+          polluting_index: [{value: doc[:polluting_index], timestamp: doc[:timestamp]}]
+        }
+
+        resource.send_data(new_data)
       else
         resource_data = {
-          worker: :cetesb_gatherer_worker,
+          worker: AirQuality.workers[:cetesb_gatherer_worker],
           worker_uuid: doc[:region],
           lat: -23.559616, # TODO: fakedata
           lon: -1.55, # TODO: fakedata
@@ -53,10 +57,8 @@ class CetesbGathererWorker
           platform_id: platform_id
         }
         res = AirQuality.create(resource_data)
-        res.register
+        res.fetch_or_register
       end
-      puts "DOC => #{doc}"
     end
-
   end
 end
