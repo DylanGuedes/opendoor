@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get '/set_platform/:platform_id', to: 'platforms#set_instance'
   get '/resources', to: 'resources#index'
   get '/resources/cetesb_gatherer', to: 'resources#fetch_cetesb_data'
+  get '/resources/active_cetesb_cron', to: 'resources#active_cetesb_cron'
 end

@@ -3,6 +3,16 @@ require 'mechanize'
 class CetesbGathererWorker
   include Sidekiq::Worker
 
+  @@cron_scheduled = false
+
+  def self.cron_running
+    @@cron_scheduled
+  end
+
+  def self.turn_on
+    @@cron_scheduled = true
+  end
+
   def fetch_cetesb_page
     url_cetesb = "http://sistemasinter.cetesb.sp.gov.br/Ar/php/ar_resumo_hora.php"
     agent = Mechanize.new
@@ -52,7 +62,7 @@ class CetesbGathererWorker
       index = fetch_polluting_index(data)
       polluting = fetch_polluting(data)
       quality = fetch_quality(data)
-      timestamp = "20/08/2020T10:27:40"
+      timestamp = DateTime.now.to_s
 
       attrs = {
         worker_uuid: region,
