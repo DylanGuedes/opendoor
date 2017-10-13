@@ -20,7 +20,7 @@ RSpec.describe CetesbGathererWorker, type: :worker do
       file.close
 
       stub_request(:get, "http://sistemasinter.cetesb.sp.gov.br/Ar/php/ar_resumo_hora.php").
-        with(headers: headers).to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+        with{|request| not request.headers.blank?}.to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
 
       headers = {
         'Accept'=>'*/*', 'Accept-Charset'=>'ISO-8859-1,utf-8;q=0.7,*;q=0.7',
