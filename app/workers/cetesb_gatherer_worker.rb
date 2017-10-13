@@ -52,7 +52,7 @@ class CetesbGathererWorker
       index = fetch_polluting_index(data)
       polluting = fetch_polluting(data)
       quality = fetch_quality(data)
-      timestamp = Time.now.getutc.to_s
+      timestamp = "20/08/2020T10:27:40"
 
       attrs = {
         worker_uuid: region,
@@ -61,13 +61,12 @@ class CetesbGathererWorker
       # if the resource is already present, do not register a new one
       resource = AirQuality.find_by(attrs)
 
-      if resource
-        new_data = {
-          air_quality: [{value: quality, timestamp: timestamp}],
-          polluting: [{value: polluting, timestamp: timestamp}],
-          polluting_index: [{value: index, timestamp: timestamp}]
-        }
-        update_resource_data(resource, new_data)
+      if resource and resource.uuid
+        new_data = {}
+        new_data[:temperature] = [
+          {air_quality: quality, timestamp: timestamp}
+        ]
+        update_resource_data(resource, {data: new_data})
       else
         create_resource(region, platform_id)
       end
