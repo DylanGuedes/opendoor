@@ -1,10 +1,11 @@
 require 'rails_helper'
 require 'sidekiq/testing'
-Sidekiq::Testing.inline!
 
 RSpec.describe CetesbGathererWorker, type: :worker do
   describe 'normal job scheduling' do
     it 'should create resources' do
+      WebMock.allow_net_connect!(:net_http_connect_on_start => true)
+
       id = FactoryGirl.create(:platform).id
       Sidekiq::Testing.inline! do
         old_count = AirQuality.count

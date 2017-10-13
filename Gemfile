@@ -63,3 +63,4 @@ gem 'sidekiq'
 gem 'mechanize'
 gem 'rest-client'
 gem 'colorize'
+gem 'webmock', require: false

@@ -35,5 +35,4 @@ class AirQuality < ApplicationRecord
       polluting: [{value: self.polluting, timestamp: self.timestamp}]
     }
   end
-
 end

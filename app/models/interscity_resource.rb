@@ -21,7 +21,7 @@ module InterscityResource
       begin
         response = RestClient.post(url, data)
         response = JSON.parse(response)
-        puts "Capability #{x[:title]} 'registered".green
+        puts "Capability #{x[:title]} registered with id #{response["id"]}".green
       rescue RestClient::Exception => e
         puts "ERROR: Could not register capability #{x[:title]}. Maybe the name is already being used?".red
       end
