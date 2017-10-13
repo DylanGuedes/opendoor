@@ -1,5 +1,7 @@
 class AirQuality < ApplicationRecord
   belongs_to :platform
+  validates :platform, presence: true
+
   include InterscityResource
 
   def fetch_from_platform

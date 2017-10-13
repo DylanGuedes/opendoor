@@ -2,6 +2,22 @@ require 'rails_helper'
 require 'webmock/rspec'
 
 RSpec.describe AirQuality, type: :model do
+  describe "invalid params" do
+    it "requires a platform" do
+      attrs = FactoryGirl.attributes_for(:air_quality, platform_id: nil)
+      aq = AirQuality.new(attrs)
+      expect(aq).not_to be_valid
+    end
+  end
+
+  describe "valid params" do
+    it "works well" do
+      platform = FactoryGirl.create(:platform)
+      attrs = FactoryGirl.attributes_for(:air_quality, platform_id: platform.id)
+      aq = AirQuality.new(attrs)
+      expect(aq).to be_valid
+    end
+  end
   describe "registration in the platform" do
     before do
       @aq = FactoryGirl.create(:air_quality)
