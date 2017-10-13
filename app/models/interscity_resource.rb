@@ -17,7 +17,11 @@ module InterscityResource
   def ensure_capabilities_exist(platform_url, capabilities)
     url = platform_url + '/catalog/capabilities'
     capabilities.each do |x|
-      data = { name: x[:title], capability_type: x[:typ], description: x[:description] }
+      data = {
+        name: x[:title],
+        capability_type: x[:typ],
+        description: x[:description]
+      }
       begin
         response = RestClient.post(url, data)
         response = JSON.parse(response)
@@ -33,7 +37,7 @@ module InterscityResource
     url = platform_url + "/adaptor/components"
 
     doc = normalized_registration_data
-    ensure_capabilities_exist(platform_url, doc[:capabilities])
+    ensure_capabilities_exist(platform_url, AirQuality.capabilities)
 
     if self.uuid.blank? or not fetch_from_platform
       begin
@@ -55,7 +59,7 @@ module InterscityResource
     url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
 
     begin
-      response = RestClient.post(url, {data: new_data})
+      response = RestClient.post(url, new_data)
       puts "Resource #{self.uuid} #{'updated'.blue}"
     rescue RestClient::Exception => e
       puts "ERROR: Could not send data from resource. Description: #{e.response}".red

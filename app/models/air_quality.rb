@@ -1,12 +1,13 @@
 class AirQuality < ApplicationRecord
   belongs_to :platform
+  validates :platform, presence: true
+
   include InterscityResource
 
   def fetch_from_platform
     platform_url = self.platform.url
     url = platform_url + "/catalog/resources/#{self.uuid}"
     response = RestClient.get(url)
-    puts response
     response ? true : false
   end
 
@@ -23,16 +24,8 @@ class AirQuality < ApplicationRecord
       lat: self.lat,
       lon: self.lon,
       description: "#{self.region} air quality",
-      capabilities: AirQuality.capabilities,
+      capabilities: ["air-quality", "polluting-index", "polluting"],
       status: "active"
-    }
-  end
-
-  def normalized_update_data
-    {
-      air_quality: [{value: self.quality, timestamp: self.timestamp}],
-      polluting_index: [{value: self.polluting_index, timestamp: self.timestamp}],
-      polluting: [{value: self.polluting, timestamp: self.timestamp}]
     }
   end
 end
