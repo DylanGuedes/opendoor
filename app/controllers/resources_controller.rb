@@ -17,7 +17,6 @@ class ResourcesController < ApplicationController
 
   def active_cetesb_cron
     if cookies[:instance_id] and not CetesbGathererWorker.cron_running
-      puts "here!!"
       Sidekiq::Cron::Job.create(name: 'Cetesb every-5min',
                                 cron: '*/5 * * * *',
                                 class: 'CetesbGathererWorker',
