@@ -1,0 +1,58 @@
+version: '2'
+
+services:
+  postgres:
+    container_name: opendoor-pg
+    image: 'postgres:9.5'
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'admin'
+
+  redis:
+    image: 'redis'
+    container_name: opendoor-redis
+
+  sidekiq:
+    container_name: opendoor-sidekiq
+    depends_on:
+      - 'redis'
+      - 'postgres'
+    build: .
+    command: bash -c "bundle install && bundle exec sidekiq -C config/sidekiq.yml"
+    volumes:
+      - '.:/opendoor'
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_HOST: 'opendoor-pg'
+      POSTGRES_PORT: 5432
+      RAILS_ENV: 'development'
+      KONG_URI: 'http://kong:8001'
+      SELF_HOST: 'opendoor:3000'
+      REGISTER_METHOD: 'none'
+
+  opendoor:
+    container_name: opendoor
+    depends_on:
+      - 'postgres'
+      - 'redis'
+      - 'sidekiq'
+    build: .
+    ports:
+      - 3001:3000
+    volumes:
+      - '.:/opendoor'
+    command: bash -c "bundle install && bundle exec rails s -p 3000 -b 0.0.0.0"
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'admin'
+      POSTGRES_HOST: 'opendoor-pg'
+      POSTGRES_PORT: 5432
+      KONG_URI: 'http://kong:8001'
+      SELF_HOST: 'opendoor:3000'
+      REGISTER_METHOD: 'target'
+
+networks:
+  default:
+    external:
+      name: platform
