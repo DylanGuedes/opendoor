@@ -25,4 +25,21 @@ class ResourcesController < ApplicationController
     end
     redirect_to resources_path
   end
+
+  def dump_recovery
+    @platforms = Platform.all.map{|p| [p.url, p.id]}
+    @desired_resource = [ ["Air Quality", "AirQuality"] ]
+  end
+
+  def dump_and_inject
+    SpDataWorker.perform_async(
+      params[:platform_id],
+      'mongodb://'+params[:db_host],
+      params[:db_name],
+      params[:resource_type],
+      2 # limit
+    )
+
+    redirect_to resources_path
+  end
 end

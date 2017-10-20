@@ -1,0 +1,56 @@
+<div class="main ui container">
+  <p>
+    Here you can recovery data from mongo and inject it in a InterSCity
+    instance. Fill the fields and then inject the data.
+  </p>
+
+  <p>
+    You can fetch this data accessing the platform url at
+    '/collector/resources/data/last'
+  </p>
+
+  <p class="ui red segment">
+    Keep in mind that it will inject the data in the selected platform instance.
+    You can create the desired instance <%= link_to 'here', '/platforms' %>.
+  </p>
+
+  <div class="ui form">
+    <%= form_tag("/dump_and_inject", method: "post") do %>
+
+      <div class="ui field">
+        <label>Platform Instance</label>
+
+        <div class="ui input">
+          <%= select_tag :platform_id, options_for_select(@platforms) %>
+        </div>
+      </div>
+
+      <div class="ui field">
+        <label>Mongodb host</label>
+
+        <div class="ui labeled input">
+          <div class="ui label">
+            mongodb://
+          </div>
+          <%= text_field_tag(:db_host, nil, placeholder: "127.0.0.1:27017") %>
+        </div>
+      </div>
+
+      <div class="ui field">
+        <label>Database name</label>
+        <%= text_field_tag(:db_name, nil, placeholder: "Example: 'sp'") %>
+      </div>
+
+      <div class="ui field">
+        <label>Resource Type</label>
+
+        <div class="ui input">
+          <%= select_tag :resource_type, options_for_select(@desired_resource) %>
+        </div>
+      </div>
+
+      <%= submit_tag("Inject dump", class: "ui green button") %>
+
+    <% end %>
+  </div>
+</div>

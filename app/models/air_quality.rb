@@ -30,26 +30,33 @@ class AirQuality < ApplicationRecord
   end
 
   # Extract only required attributes to look for a instance of this resource.
-  def fetch entry
+  def self.fetch entry
     {
       worker_uuid: entry[:region],
-      platform_uuid: entry[:platform_id]
+      platform_id: entry[:platform_id]
     }
   end
 
-  def mount_data_from entry
+  def self.mount_data_from entry
     data = {}
     data[:air_quality] = [
       {
         air_quality: entry[:quality],
-        polluting: entry[:polluting],
+        timestamp: DateTime.now.to_s
+      },
+      {
         polluting_index: entry[:index],
-        timestamp: entry[:timestamp]
+        timestamp: DateTime.now.to_s
+      },
+      {
+        polluting: entry[:polluting],
+        timestamp: DateTime.now.to_s
       }
     ]
+    data
   end
 
-  def mount_resource entry
+  def self.mount_resource entry
     {
       worker: AirQuality.workers[:cetesb_gatherer_worker],
       worker_uuid: entry[:region],
@@ -59,5 +66,9 @@ class AirQuality < ApplicationRecord
       region: entry[:region],
       platform_id: entry[:platform_id]
     }
+  end
+
+  def self.collection
+    :air_quality
   end
 end
