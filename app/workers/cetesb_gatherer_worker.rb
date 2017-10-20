@@ -73,8 +73,13 @@ class CetesbGathererWorker
 
       if resource and resource.uuid
         new_data = {}
-        new_data[:temperature] = [
-          {air_quality: quality, timestamp: timestamp}
+        new_data[:air_quality] = [
+          {
+            air_quality: quality,
+            polluting: polluting,
+            polluting_index: index,
+            timestamp: timestamp
+          }
         ]
         update_resource_data(resource, {data: new_data})
       else

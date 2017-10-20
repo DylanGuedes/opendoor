@@ -28,4 +28,36 @@ class AirQuality < ApplicationRecord
       status: "active"
     }
   end
+
+  # Extract only required attributes to look for a instance of this resource.
+  def fetch entry
+    {
+      worker_uuid: entry[:region],
+      platform_uuid: entry[:platform_id]
+    }
+  end
+
+  def mount_data_from entry
+    data = {}
+    data[:air_quality] = [
+      {
+        air_quality: entry[:quality],
+        polluting: entry[:polluting],
+        polluting_index: entry[:index],
+        timestamp: entry[:timestamp]
+      }
+    ]
+  end
+
+  def mount_resource entry
+    {
+      worker: AirQuality.workers[:cetesb_gatherer_worker],
+      worker_uuid: entry[:region],
+      lat: -23.559616, # TODO: fakedata
+      lon: -1.55, # TODO: fakedata
+      status: "active",
+      region: entry[:region],
+      platform_id: entry[:platform_id]
+    }
+  end
 end
