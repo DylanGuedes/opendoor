@@ -93,11 +93,16 @@ class CetesbGathererWorker
   end
 
   def create_resource(region, platform_id)
+    coords = Geocoder.coordinates(region)
+    unless coords
+      coords = Geocoder.coordinates("São Paulo") # if region isnt available..
+    end
+
     resource_data = {
       worker: AirQuality.workers[:cetesb_gatherer_worker],
       worker_uuid: region,
-      lat: -23.559616, # TODO: fakedata
-      lon: -1.55, # TODO: fakedata
+      lat: coords[0],
+      lon: coords[1],
       status: "active",
       region: region,
       platform_id: platform_id

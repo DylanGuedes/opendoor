@@ -66,3 +66,4 @@ gem 'colorize'
 gem 'webmock', require: false
 gem 'sidekiq-cron'
 gem 'mongo'
+gem 'geocoder'
