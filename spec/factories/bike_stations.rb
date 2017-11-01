@@ -1,11 +1,12 @@
 FactoryGirl.define do
   factory :bike_station do
-    worker_uuid "MyString"
-    worker 1
-    uuid "MyString"
-    lon 1.5
-    lat 1.5
-    status "MyString"
-    platform nil
+    worker_uuid ''
+    worker BikeStation.workers[:citybik_gatherer_worker]
+    uuid ''
+    bike_station_uuid ''
+    lon '-23'
+    lat '-25'
+    status BikeStation.steps[:not_registered]
+    association :platform, factory: :platform, strategy: :build
   end
 end
