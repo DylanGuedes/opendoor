@@ -16,6 +16,7 @@ module InterscityResource
 
   def ensure_capabilities_exist(platform_url, capabilities)
     url = platform_url + '/catalog/capabilities'
+    puts "CAPABILITIES: #{capabilities}"
     capabilities.each do |x|
       data = {
         name: x[:title],
@@ -37,14 +38,13 @@ module InterscityResource
     url = platform_url + "/adaptor/components"
 
     doc = normalized_registration_data
-    ensure_capabilities_exist(platform_url, AirQuality.capabilities)
+    ensure_capabilities_exist(platform_url, self.class.capabilities)
 
     if self.uuid.blank? or not fetch_from_platform
       begin
         response = RestClient.post(url, {data: doc})
         response = JSON.parse(response)
         self.uuid = response["data"]["uuid"]
-        self.step = self.class.steps[:registered]
         self.save
         puts "Resource #{self.uuid} #{'registered'.green}"
       rescue RestClient::Exception => e
