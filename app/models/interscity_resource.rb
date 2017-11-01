@@ -3,7 +3,7 @@ module InterscityResource
 
   included do
     enum steps: [:not_registered, :registered]
-    enum workers: [:cetesb_gatherer_worker]
+    enum workers: [:cetesb_gatherer_worker, :citybik_gatherer_worker]
   end
 
   def normalized_registration_data
