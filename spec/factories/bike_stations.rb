@@ -3,7 +3,7 @@ FactoryGirl.define do
     worker_uuid ''
     worker BikeStation.workers[:citybik_gatherer_worker]
     uuid ''
-    bike_station_uuid ''
+    bike_station_uuid 'bike_station_uuid'
     lon '-23'
     lat '-25'
     status BikeStation.steps[:not_registered]
