@@ -8,6 +8,7 @@ class CreateBikeStations < ActiveRecord::Migration[5.1]
       t.string :bike_station_uuid
       t.float :lat
       t.float :lon
+      t.integer :step
       t.string :status
 
       t.timestamps
