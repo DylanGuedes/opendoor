@@ -16,7 +16,6 @@ module InterscityResource
 
   def ensure_capabilities_exist(platform_url, capabilities)
     url = platform_url + '/catalog/capabilities'
-    puts "CAPABILITIES: #{capabilities}"
     capabilities.each do |x|
       data = {
         name: x[:title],

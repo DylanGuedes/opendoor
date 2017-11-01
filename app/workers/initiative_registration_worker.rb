@@ -2,9 +2,7 @@ class InitiativeRegistrationWorker
   include Sidekiq::Worker
 
   def perform(body, platform_id)
-    body = JSON.parse(body)
     timestamp = DateTime.now.to_s
-
 
     attrs = {
       worker_uuid: body[:name],

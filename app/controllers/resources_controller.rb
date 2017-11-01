@@ -10,7 +10,7 @@ class ResourcesController < ApplicationController
 
   def fetch_cetesb_data
     if cookies[:instance_id]
-      CetesbGathererWorker.perform_async(AirQuality.workers[:cetesb_gatherer_worker], cookies[:instance_id])
+      CetesbGathererWorker.perform_async(cookies[:instance_id])
     end
     redirect_to resources_path
   end
@@ -44,21 +44,8 @@ class ResourcesController < ApplicationController
   end
 
   def register_initiative
-    body = {
-      name: "IME",
-      institution: "IME",
-      address: "Rua do Matao 1010",
-      city: "São Paulo",
-      state: "SP",
-      responsible: "Kon",
-      responsible_email: "kon@ime.usp.br",
-      responsible_phone: "12332123",
-      created_at: "2017-10-18T15:50:59.238Z",
-      updated_at: "2017-10-18T15:50:59.238Z"
-    }
-
     if cookies[:instance_id]
-      InitiativeRegistrationWorker.perform_async(body, cookies[:instance_id])
+      InitiativeRegistrationWorker.perform_async(initiative_params, cookies[:instance_id])
     end
     redirect_to resources_path
   end
@@ -66,5 +53,6 @@ class ResourcesController < ApplicationController
   private
 
   def initiative_params
+    params.require(:initiative).permit(:lat, :lon)
   end
 end
