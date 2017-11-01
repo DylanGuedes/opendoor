@@ -14,12 +14,12 @@ class BikeStation < ApplicationRecord
   def self.capabilities
     [
       {title: 'slots', typ: 'sensor', description: 'the number of slots'},
-      {title: 'free_bikes', typ: 'sensor' description: 'the number of bikes available to hire'},
+      {title: 'free-bikes', typ: 'sensor', description: 'the number of bikes available to hire'},
       # address field needs revision, it is here because of the legacy code
       {title: 'address', typ: 'sensor', description: 'the bike station address'},
       # external_uid field needs revision, it is here because legacy code
-      {title: 'bike_station_uuid', typ: 'sensor', description: 'bike station identification extract from external data source'},
-      {title: 'status' typ: 'sensor', description: 'information about the bike station'}
+      {title: 'bike-station-uuid', typ: 'sensor', description: 'bike station identification extracted from external data source'},
+      {title: 'status', typ: 'sensor', description: 'information about the bike station'}
     ]
   end
 
@@ -28,7 +28,7 @@ class BikeStation < ApplicationRecord
       lat: self.lat,
       lon: self.lon,
       description: "#{self.bike_station_uuid} bike station",
-      capabilities: ['slots', 'free_bikes', 'address', 'bike_station_uuid', 'status'],
+      capabilities: ['slots', 'free-bikes', 'address', 'bike-station-uuid', 'status'],
       status: 'active'
     }
   end
@@ -43,7 +43,7 @@ class BikeStation < ApplicationRecord
   def self.mount_data_from entry
     data = {}
     data[:bike_station] = [
-      { slots: entry[:slots], timestamp : DateTime.now.to_s },
+      { slots: entry[:slots], timestamp: DateTime.now.to_s },
       { free_bikes: entry[:free_bikes], timestamp: DateTime.now.to_s },
       { address: entry[:address], timestamp: DateTime.now.to_s },
       { bike_station_uuid: entry[:bike_station_uuid], timestamp: DateTime.now.to_s },
