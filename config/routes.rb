@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root 'application#index'
   get '/home', to: 'application#index'
   resources 'platforms'
+  post '/initiatives/register', to: 'resources#register_initiative'
   get '/set_platform/:platform_id', to: 'platforms#set_instance'
   get '/resources', to: 'resources#index'
   get '/resources/cetesb_gatherer', to: 'resources#fetch_cetesb_data'

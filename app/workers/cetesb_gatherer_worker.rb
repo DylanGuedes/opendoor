@@ -50,7 +50,7 @@ class CetesbGathererWorker
     data[3].text
   end
 
-  def perform(collector_id, platform_id)
+  def perform(platform_id)
     cetesb_data = fetch_cetesb_page
 
     cetesb_data.element_children.each do |line|
