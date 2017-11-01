@@ -3,28 +3,27 @@ class InitiativeRegistrationWorker
 
   def perform(body, platform_id)
     timestamp = DateTime.now.to_s
+    body = eval(body)
 
     attrs = {
-      worker_uuid: body[:name],
+      worker_uuid: body.fetch("name"),
       platform_id: platform_id
     }
-    # if the resource is already present, do not register a new one
+
+    create_resource(body, platform_id)
+
     resource = Initiative.find_by(attrs)
 
-    if resource and resource.uuid
-      new_data = {}
-      new_data[:responsible] = [
-        {
-          responsible: body[:responsible],
-          responsible_phone: body[:responsible_phone],
-          responsible_email: body[:resposible_email],
-          timestamp: timestamp
-        }
-      ]
-      update_resource_data(resource, {data: new_data})
-    else
-      create_resource(body, platform_id)
-    end
+    new_data = {}
+    new_data[:responsible] = [
+      {
+        responsible: body.fetch("responsible"),
+        responsible_phone: body.fetch("responsible_phone"),
+        responsible_email: body.fetch("responsible_email"),
+        timestamp: timestamp
+      }
+    ]
+    update_resource_data(resource, {data: new_data})
   end
 
   def update_resource_data(resource, new_data)
@@ -32,18 +31,20 @@ class InitiativeRegistrationWorker
   end
 
   def create_resource(initiative, platform_id)
-    coords = Geocoder.coordinates("#{initiative[:region]} #{initiative[:city]}")
+    coords = Geocoder.coordinates("#{initiative.fetch("address")} #{initiative.fetch("city")}")
     unless coords
       coords = Geocoder.coordinates("São Paulo") # if region isnt available..
     end
 
     resource_data = {
-      worker_uuid: initiative[:name],
+      worker: 1,
+      worker_uuid: initiative.fetch("name"),
       lat: coords[0],
       lon: coords[1],
       status: "active",
-      region: "#{initiative[:region]} #{initiative[:city]}",
-      platform_id: platform_id
+      region: "#{initiative.fetch("address")} #{initiative.fetch("city")}",
+      platform_id: platform_id,
+      state: initiative.fetch("state")
     }
     res = Initiative.create(resource_data)
     res.fetch_or_register

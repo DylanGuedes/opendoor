@@ -36,16 +36,15 @@ class ResourcesController < ApplicationController
       params[:platform_id],
       'mongodb://'+params[:db_host],
       params[:db_name],
-      params[:resource_type],
-      2 # limit
+      params[:resource_type]
     )
 
     redirect_to resources_path
   end
 
   def register_initiative
-    if cookies[:instance_id]
-      InitiativeRegistrationWorker.perform_async(initiative_params, cookies[:instance_id])
+    if params[:instance_id]
+      InitiativeRegistrationWorker.perform_async(initiative_params, params[:instance_id])
     end
     redirect_to resources_path
   end
@@ -53,6 +52,8 @@ class ResourcesController < ApplicationController
   private
 
   def initiative_params
-    params.require(:initiative).permit(:lat, :lon)
+    params.require(:initiative).permit(:name, :state, :responsible_phone,
+                                       :responsible, :responsible_email, :city,
+                                       :address, :institution, :lat, :lon)
   end
 end

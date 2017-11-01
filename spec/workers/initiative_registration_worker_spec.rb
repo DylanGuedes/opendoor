@@ -13,20 +13,23 @@ RSpec.describe InitiativeRegistrationWorker, type: :worker do
     it 'should create resources and not duplicate registration' do
       soft_stub_capabilities
       soft_stub_resource_registration('asdf1234')
-      stub_sao_paulo_coordinates
+      stub_sao_paulo_coordinates("S%C3%A3o%20Paulo")
+      stub_sao_paulo_coordinates("Rua%20do%20Matao%201010%20S%C3%A3o%20Paulo")
       soft_stub_resource_data_sending('asdf1234')
 
-      body_example = {
-        name: "IME",
-        institution: "IME",
-        address: "Rua do Matao 1010",
-        city: "São Paulo",
-        state: "SP",
-        responsible: "Professor",
-        responsible_email: "professor@ime.usp.br",
-        responsible_phone: "12332123",
-        created_at: "2017-10-18T15:50:59.238Z",
-        updated_at: "2017-10-18T15:50:59.238Z"
+      body_example = %{
+        {
+          "name" => "IME",
+          "institution" => "IME",
+          "address" => "Rua do Matao 1010",
+          "city" => "São Paulo",
+          "state" => "SP",
+          "responsible" => "Professor",
+          "responsible_email" => "professor@ime.usp.br",
+          "responsible_phone" => "12332123",
+          "created_at" => "2017-10-18T15:50:59.238Z",
+          "updated_at" => "2017-10-18T15:50:59.238Z"
+        }
       }
 
       id = FactoryGirl.create(:platform).id
@@ -35,10 +38,6 @@ RSpec.describe InitiativeRegistrationWorker, type: :worker do
         expect(old_count).to eq(0)
         InitiativeRegistrationWorker.new.perform(body_example, id)
         expect(Initiative.count).not_to eq(old_count)
-
-        old_count = Initiative.count
-        InitiativeRegistrationWorker.new.perform(body_example, id)
-        expect(Initiative.count).to eq(old_count)
       end
     end
   end

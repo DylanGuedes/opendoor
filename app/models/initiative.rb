@@ -35,7 +35,7 @@ class Initiative < ApplicationRecord
     {
       lat: self.lat,
       lon: self.lon,
-      description: "#{self.name} initiative",
+      description: "#{self.worker_uuid} initiative",
       capabilities: ["responsible", "responsible_email", "responsible_phone"],
       status: "active",
       neighborhood: self.address,
