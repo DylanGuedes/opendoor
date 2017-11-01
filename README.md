@@ -32,3 +32,10 @@ instance.
 
 We use mainly `rspec` to write the tests. To run the tests, run `rspec`
 after installing the gems.
+
+## How to normalize InterSCity region names:
+
+1. Enter in mongo: `mongo`
+2. Use database sp: `use sp`
+3. Change things: `db.air_quality.updateMany({region: 'CapÃ£o Redondo'}, { $set: {region: 'Capão Redondo'} })`
+4. Count: `db.air_quality.find({region: 'Capão Redondo'}).count()`

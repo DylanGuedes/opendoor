@@ -25,7 +25,10 @@ class AirQuality < ApplicationRecord
       lon: self.lon,
       description: "#{self.region} air quality",
       capabilities: ["air-quality", "polluting-index", "polluting"],
-      status: "active"
+      status: "active",
+      neighborhood: self.region,
+      state: self.region,
+      country: self.region
     }
   end
 
@@ -57,11 +60,12 @@ class AirQuality < ApplicationRecord
   end
 
   def self.mount_resource entry
+    coords = Geocoder.coordinates(entry[:region])
     {
       worker: AirQuality.workers[:cetesb_gatherer_worker],
       worker_uuid: entry[:region],
-      lat: -23.559616, # TODO: fakedata
-      lon: -1.55, # TODO: fakedata
+      lat: coords[0],
+      lon: coords[1],
       status: "active",
       region: entry[:region],
       platform_id: entry[:platform_id]
