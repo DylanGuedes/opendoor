@@ -1,8 +1,8 @@
 FactoryGirl.define do
   factory :bike_station do
-    worker_uuid ''
+    worker_uuid 'asdf1234'
     worker BikeStation.workers[:citybik_gatherer_worker]
-    uuid ''
+    uuid 'asdf1234'
     bike_station_uuid 'bike_station_uuid'
     lon '-23'
     lat '-25'
