@@ -55,7 +55,7 @@ module InterscityResource
   end
 
   def send_data(new_data)
-    url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
+    url = self.platform.url + "/adaptor/resources/#{self.uuid}/data"
 
     begin
       response = RestClient.post(url, new_data)
