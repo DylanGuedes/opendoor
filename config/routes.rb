@@ -10,5 +10,9 @@ Rails.application.routes.draw do
   get '/resources/accuweather_gatherer', to: 'resources#fetch_accuweather_data'
   get '/resources/active_cetesb_cron', to: 'resources#active_cetesb_cron'
   get '/dump_recovery', to: 'resources#dump_recovery'
+  get '/cetesb_cron_index', to: 'crons_scheduling#cetesb_cron_index'
+  get '/accuweather_cron_index', to: 'crons_scheduling#accuweather_cron_index'
+  post '/cetesb_cron_activate', to: 'crons_scheduling#cetesb_cron_activate'
+  post '/accuweather_cron_activate', to: 'crons_scheduling#accuweather_cron_activate'
   post '/dump_and_inject', to: 'resources#dump_and_inject'
 end

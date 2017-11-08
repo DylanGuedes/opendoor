@@ -35,7 +35,7 @@ class ResourcesController < ApplicationController
 
   def dump_recovery
     @platforms = Platform.all.map{|p| [p.url, p.id]}
-    @desired_resource = [ ["Air Quality", "AirQuality"] ]
+    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"] ]
   end
 
   def dump_and_inject
