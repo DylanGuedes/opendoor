@@ -19,7 +19,7 @@ module InterscityMocks
 
   def soft_stub_resource_data_sending(uuid)
     r = {}.to_json
-    send_data_url = "http://localhost:8000/adaptor/resources/#{uuid}/data"
+    send_data_url = "http://localhost:8000/adaptor/components/#{uuid}/data"
     stub_request(:post, send_data_url).
       with{|request| not request.headers.blank?}.
       to_return(status: 200, body: r, headers: {})
@@ -41,4 +41,23 @@ module InterscityMocks
       to_return(status: 200, body: body, headers: {})
   end
 
+  def accuweather_index_stub
+    file = File.open("spec/accuweather_index.html")
+    data = file.read
+    file.close
+
+    stub_request(:get, "http://www.accuweather.com/pt/br/brazil-weather").
+      with{|request| not request.headers.blank?}.
+      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+  end
+
+  def stub_accuweather_posts
+    file = File.open("spec/accuweather_region_page.html")
+    data = file.read
+    file.close
+
+    stub_request(:post, "https://www.accuweather.com/pt/search-locations").
+      with{|request| not request.body.blank?}.
+      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+  end
 end

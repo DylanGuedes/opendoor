@@ -28,7 +28,7 @@ RSpec.describe CetesbGathererWorker, type: :worker do
 
       soft_stub_resource_registration('asdf1234')
       soft_stub_resource_data_sending('asdf1234')
-      stub_sao_paulo_coordinates("Cidade")
+      stub_sao_paulo_coordinates("Cidade,%20S%C3%A3o%20Paulo")
 
       id = FactoryGirl.create(:platform).id
       Sidekiq::Testing.inline! do

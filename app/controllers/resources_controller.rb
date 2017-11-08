@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [AirQuality]
+  RESOURCE_TYPES = [AirQuality, Weather]
 
   def index
     @resources = []
@@ -26,9 +26,16 @@ class ResourcesController < ApplicationController
     redirect_to resources_path
   end
 
+  def fetch_accuweather_data
+    if cookies[:instance_id]
+      AccuweatherGathererWorker.perform_async(cookies[:instance_id])
+    end
+    redirect_to resources_path
+  end
+
   def dump_recovery
     @platforms = Platform.all.map{|p| [p.url, p.id]}
-    @desired_resource = [ ["Air Quality", "AirQuality"] ]
+    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"] ]
   end
 
   def dump_and_inject

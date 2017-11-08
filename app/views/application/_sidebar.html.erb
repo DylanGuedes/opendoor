@@ -19,6 +19,10 @@
       <a class="item" href="/resources/cetesb_gatherer">
         Fetch Cetesb Data
       </a>
+
+      <a class="item" href="/resources/accuweather_gatherer">
+        Fetch Accuweather Data
+      </a>
     </div>
   </div>
 
@@ -36,9 +40,18 @@
     <div class="header">Crons</div>
 
     <div class="menu">
-      <a class="item" href="/resources/active_cetesb_cron">
+      <a class="item" href="/cetesb_cron_index">
         Cetesb Cron
         <% if CetesbGathererWorker.cron_running %>
+          <i class="green checkmark icon"></i>
+        <% else %>
+          <i class="remove red icon"></i>
+        <% end %>
+      </a>
+
+      <a class="item" href="/accuweather_cron_index">
+        Accuweather Cron
+        <% if AccuweatherGathererWorker.cron_running %>
           <i class="green checkmark icon"></i>
         <% else %>
           <i class="remove red icon"></i>
