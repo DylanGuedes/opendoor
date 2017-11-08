@@ -13,12 +13,17 @@ class Weather < ApplicationRecord
 
   def self.capabilities
     [
-      {title: "temperature", typ: "sensor", description: 'temperature of a given region'},
-      {title: "thermal_sensation", typ: "sensor", description: 'thermal sensation of a given region'},
-      {title: "wind_speed", typ: "sensor", description: 'wind speed of a given region'},
-      {title: 'humidity', typ: 'sensor', description: 'humidity of a given region'},
-      {title: 'pressure', typ: 'sensor', description: 'pressure of a given region'},
-      {title: 'neighborhood', typ: 'sensor', description: 'neighborhood of this resource'}
+      {title: "temperature", typ: "sensor", description: 'temperature of a given region, in fahrenheit'},
+      {title: "thermal_sensation", typ: "sensor", description: 'thermal sensation of a given region, in fahrenheit'},
+      {title: "wind_speed", typ: "sensor", description: 'wind speed of a given region, in mph'},
+      {title: 'humidity', typ: 'sensor', description: 'humidity of a given region, in percentage'},
+      {title: 'pressure', typ: 'sensor', description: 'pressure of a given region, in pol'},
+      {title: 'neighborhood', typ: 'sensor', description: 'neighborhood of this resource'},
+      {title: 'cloud_cover', typ: 'sensor', description: 'cloud cover of a given region, in percentage'},
+      {title: 'uv_index', typ: 'sensor', description: 'uv index of a given region'},
+      {title: 'ceilling', typ: 'sensor', description: 'ceilling of a given region, in ft'},
+      {title: 'dew_point', typ: 'sensor', description: 'dew point of a given region, in fahrenheit'},
+      {title: 'visibility', typ: 'sensor', description: 'visibility of a given region, in mi'}
     ]
   end
 
@@ -33,7 +38,12 @@ class Weather < ApplicationRecord
         'wind_speed',
         'humidity',
         'pressure',
-        'neighborhood'
+        'neighborhood',
+        'cloud_cover',
+        'uv_index',
+        'ceilling',
+        'dew_point',
+        'visibility'
       ],
       status: "active",
       neighborhood: self.neighborhood,

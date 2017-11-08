@@ -55,12 +55,25 @@ class AccuweatherGathererWorker
     stats = stats.gsub!(/\:/, '')
     stats = stats.split(/\s/).reject(&:empty?)
 
+    puts "STATs #{stats}"
+
     humidity_index = stats.index('Humidade') + 1
     pressure_index = stats.index('Pressão') + 1
+    uv_index_index = stats.index('UV') + 1
+    cloud_cover_index = stats.index('nuvens') + 1
+    ceilling_index = stats.index('Teto') + 1
+    dew_point_index = stats.index('orvalho') + 1
+    visibility_index = stats.index('Visibilidade') + 1
 
-    wind_speed = stats[0].to_i
+
+    wind_speed = stats[3].to_i
     humidity = stats[humidity_index]
     pressure = stats[pressure_index].to_f
+    uv_index = stats[uv_index_index]
+    cloud_cover = stats[cloud_cover_index]
+    ceilling = stats[ceilling_index]
+    dew_point = stats[dew_point_index]
+    visibility = stats[visibility_index]
 
     timestamp = Time.now.getutc.to_s
     {
@@ -69,6 +82,12 @@ class AccuweatherGathererWorker
       neighborhood: neighborhood,
       wind_speed: wind_speed,
       pressure: pressure,
+      humidity: humidity,
+      cloud_cover: cloud_cover,
+      uv_index: uv_index,
+      ceilling: ceilling,
+      dew_point: dew_point,
+      visibility: visibility,
       timestamp: timestamp
     }
   end
@@ -79,11 +98,10 @@ class AccuweatherGathererWorker
     config_file = load_neighborhood_file
     config_file.each_line do |neighborhood|
       neighborhood = neighborhood.strip
-      fetch_accuweather_resource(form, neighborhood)
-      response = form.submit
+      response = fetch_accuweather_resource(form, neighborhood)
       doc = fetch_resource_data_from_response(response, neighborhood)
       attrs = {
-        worker_uuid: doc.fetch("neighborhood"),
+        worker_uuid: doc[:neighborhood],
         platform_id: platform_id
       }
 
@@ -93,17 +111,22 @@ class AccuweatherGathererWorker
         new_data[:weather] = [
           {
             neighborhood: neighborhood,
-            temperature: temperature,
-            thermal_sensation: thermal_sensation,
-            wind_speed: wind_speed,
-            humidity: humidity,
-            pressure: pressure,
-            timestamp: timestamp
+            temperature: doc[:temperature],
+            thermal_sensation: doc[:thermal_sensation],
+            wind_speed: doc[:wind_speed],
+            humidity: doc[:humidity],
+            pressure: doc[:pressure],
+            timestamp: doc[:timestamp],
+            cloud_cover: doc[:cloud_cover],
+            uv_index: doc[:uv_index],
+            ceilling: doc[:ceilling],
+            dew_point: doc[:dew_point],
+            visibility: doc[:visibility]
           }
         ]
         update_resource_data(resource, {data: new_data})
       else
-        create_resource(neighborhood, platform_id)
+        create_resource(doc, platform_id)
       end
     end
   end
@@ -112,7 +135,8 @@ class AccuweatherGathererWorker
     resource.send_data(new_data)
   end
 
-  def create_resource(neighborhood, platform_id)
+  def create_resource(doc, platform_id)
+    neighborhood = doc[:neighborhood]
     coords = Geocoder.coordinates("#{neighborhood}, São Paulo")
     unless coords
       coords = Geocoder.coordinates("São Paulo") # if region isnt available..
@@ -125,7 +149,8 @@ class AccuweatherGathererWorker
       lon: coords[1],
       status: "active",
       region: neighborhood,
-      platform_id: platform_id
+      platform_id: platform_id,
+      neighborhood: neighborhood
     }
     res = Weather.create(resource_data)
     res.fetch_or_register

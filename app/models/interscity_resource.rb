@@ -55,9 +55,10 @@ module InterscityResource
   end
 
   def send_data(new_data)
-    url = self.platform.url + "/adaptor/resources/#{self.uuid}/data"
+    url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
 
     begin
+      puts "URL: #{url}, new_datA: #{new_data}"
       response = RestClient.post(url, new_data)
       puts "Resource #{self.uuid} #{'updated'.blue}"
     rescue RestClient::Exception => e
