@@ -55,8 +55,6 @@ class AccuweatherGathererWorker
     stats = stats.gsub!(/\:/, '')
     stats = stats.split(/\s/).reject(&:empty?)
 
-    puts "STATs #{stats}"
-
     humidity_index = stats.index('Humidade') + 1
     pressure_index = stats.index('Pressão') + 1
     uv_index_index = stats.index('UV') + 1
@@ -64,7 +62,6 @@ class AccuweatherGathererWorker
     ceilling_index = stats.index('Teto') + 1
     dew_point_index = stats.index('orvalho') + 1
     visibility_index = stats.index('Visibilidade') + 1
-
 
     wind_speed = stats[3].to_i
     humidity = stats[humidity_index]

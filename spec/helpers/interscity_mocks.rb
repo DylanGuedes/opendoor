@@ -19,7 +19,7 @@ module InterscityMocks
 
   def soft_stub_resource_data_sending(uuid)
     r = {}.to_json
-    send_data_url = "http://localhost:8000/adaptor/resources/#{uuid}/data"
+    send_data_url = "http://localhost:8000/adaptor/components/#{uuid}/data"
     stub_request(:post, send_data_url).
       with{|request| not request.headers.blank?}.
       to_return(status: 200, body: r, headers: {})
