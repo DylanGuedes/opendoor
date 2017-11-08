@@ -93,7 +93,7 @@ class CetesbGathererWorker
   end
 
   def create_resource(region, platform_id)
-    coords = Geocoder.coordinates(region)
+    coords = Geocoder.coordinates("#{region}, São Paulo")
     unless coords
       coords = Geocoder.coordinates("São Paulo") # if region isnt available..
     end
