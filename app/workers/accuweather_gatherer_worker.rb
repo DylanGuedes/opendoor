@@ -64,12 +64,12 @@ class AccuweatherGathererWorker
     visibility_index = stats.index('Visibilidade') + 1
 
     wind_speed = stats[3].to_i
-    humidity = stats[humidity_index]
+    humidity = stats[humidity_index].gsub!(/[^0-9]/, '').to_i
     pressure = stats[pressure_index].to_f
     uv_index = stats[uv_index_index]
-    cloud_cover = stats[cloud_cover_index]
+    cloud_cover = stats[cloud_cover_index].gsub!(/[^0-9]/, '').to_i
     ceilling = stats[ceilling_index]
-    dew_point = stats[dew_point_index]
+    dew_point = stats[dew_point_index].gsub!(/[^0-9]/, '').to_i
     visibility = stats[visibility_index]
 
     timestamp = Time.now.getutc.to_s
