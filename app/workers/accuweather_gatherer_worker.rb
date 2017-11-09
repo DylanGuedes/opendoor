@@ -136,7 +136,7 @@ class AccuweatherGathererWorker
     neighborhood = doc[:neighborhood]
     coords = Geocoder.coordinates("#{neighborhood}, São Paulo")
     unless coords
-      coords = Geocoder.coordinates("São Paulo") # if region isnt available..
+      coords = [-23.60442, -46.748357]
     end
 
     resource_data = {
