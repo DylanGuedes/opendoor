@@ -1,21 +1,34 @@
 class AirQuality < ApplicationRecord
   belongs_to :platform
   validates :platform, presence: true
+  validates :worker_uuid, presence: true
+  validates :lat, presence: true
+  validates :lon, presence: true
 
   include InterscityResource
 
   def fetch_from_platform
+    if not self.uuid
+      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
+    end
+
     platform_url = self.platform.url
     url = platform_url + "/catalog/resources/#{self.uuid}"
-    response = RestClient.get(url)
-    response ? true : false
+    RestClient.get(url)
   end
 
   def self.capabilities
     [
-      {title: "air-quality", typ: "sensor", description: 'air quality of a given region'},
-      {title: "polluting-index", typ: "sensor", description: 'polluting index..'},
-      {title: "polluting", typ: "sensor", description: 'type of polluting'}
+      {
+        title: 'air_quality',
+        typ: 'sensor',
+        description: %{
+           Air quality of a given region. Meta-data:
+           Quality => Overall air quality,
+           Polluting Index => Polluting index, a number based on polluting type,
+           Polluting Type => String
+        }
+      }
     ]
   end
 
@@ -23,17 +36,21 @@ class AirQuality < ApplicationRecord
     {
       lat: self.lat,
       lon: self.lon,
-      description: "#{self.region} air quality",
-      capabilities: ["air-quality", "polluting-index", "polluting"],
+      description: "#{self.worker_uuid} air quality",
+      capabilities: ["air_quality"],
       status: "active",
-      neighborhood: self.region,
-      state: self.region,
-      country: self.region
+      neighborhood: self.worker_uuid,
+      state: self.worker_uuid,
+      country: self.worker_uuid
     }
   end
 
   # Extract only required attributes to look for a instance of this resource.
   def self.fetch entry
+    if not entry[:region] or not entry[:platform_id]
+      raise "Missing params region or platform_id!"
+    end
+
     {
       worker_uuid: entry[:region],
       platform_id: entry[:platform_id]
@@ -61,6 +78,10 @@ class AirQuality < ApplicationRecord
 
   def self.mount_resource entry
     coords = Geocoder.coordinates(entry[:region])
+    if not coords
+      raise "Geocoder didn't solved #{entry[:region]}"
+    end
+
     {
       worker: AirQuality.workers[:cetesb_gatherer_worker],
       worker_uuid: entry[:region],

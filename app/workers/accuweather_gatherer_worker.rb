@@ -98,12 +98,17 @@ class AccuweatherGathererWorker
       response = fetch_accuweather_resource(form, neighborhood)
       doc = fetch_resource_data_from_response(response, neighborhood)
       attrs = {
-        worker_uuid: doc[:neighborhood],
+        worker_uuid: neighborhood,
         platform_id: platform_id
       }
 
-      resource = Weather.find_by(attrs)
-      if resource and resource.uuid
+      puts "Loading resource #{attrs}..."
+      resource = Weather.where(attrs)
+
+      case
+      when resource.count == 1
+        resource = resource.first
+
         new_data = {}
         new_data[:weather] = [
           {
@@ -122,7 +127,9 @@ class AccuweatherGathererWorker
           }
         ]
         update_resource_data(resource, {data: new_data})
-      else
+      when resource.count > 1
+        raise "Multiple resources for worker_uuid #{neighborhood}!"
+      when resource.count < 1
         create_resource(doc, platform_id)
       end
     end
@@ -136,7 +143,7 @@ class AccuweatherGathererWorker
     neighborhood = doc[:neighborhood]
     coords = Geocoder.coordinates("#{neighborhood}, São Paulo")
     unless coords
-      coords = [-23.60442, -46.748357]
+      raise "Couldn't register resource #{neighborhood} due to it location."
     end
 
     resource_data = {

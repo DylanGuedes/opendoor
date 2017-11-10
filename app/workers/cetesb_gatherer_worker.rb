@@ -68,10 +68,18 @@ class CetesbGathererWorker
         worker_uuid: region,
         platform_id: platform_id
       }
-      # if the resource is already present, do not register a new one
-      resource = AirQuality.find_by(attrs)
 
-      if resource and resource.uuid
+      puts "Loading resource #{attrs}..."
+      if not region or not platform_id
+        raise "Missing region or platform_id!"
+      end
+      # if the resource is already present, do not register a new one
+      resource = AirQuality.where(attrs)
+
+      case
+      when resource.count == 1
+        resource = resource.first
+
         new_data = {}
         new_data[:air_quality] = [
           {
@@ -82,7 +90,9 @@ class CetesbGathererWorker
           }
         ]
         update_resource_data(resource, {data: new_data})
-      else
+      when resource.count > 1
+        raise "Multiple resources for worker_uuid #{worker_uuid}!"
+      when resource.count < 1
         create_resource(region, platform_id)
       end
     end
@@ -94,8 +104,9 @@ class CetesbGathererWorker
 
   def create_resource(region, platform_id)
     coords = Geocoder.coordinates("#{region}, São Paulo")
-    unless coords
-      coords = Geocoder.coordinates("São Paulo") # if region isnt available..
+
+    if not coords
+      raise "Couldn't solve region #{region}"
     end
 
     resource_data = {

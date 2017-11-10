@@ -32,6 +32,15 @@ module InterscityMocks
       to_return(status: 200, body: {}.to_json, headers: {})
   end
 
+  def soft_stub_resource
+    resource_url = "http://localhost:8000/catalog/resources"
+    body = {data: {uuid: uuid} }.to_json
+
+    stub_request(:get, resource_url).
+      with{|request| not request.headers.blank?}.
+      to_return(status: 200, body: body, headers: {})
+  end
+
   def soft_stub_resource_data(uuid)
     resource_url = "http://localhost:8000/catalog/resources/#{uuid}"
     body = {data: {uuid: uuid} }.to_json

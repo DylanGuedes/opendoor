@@ -29,7 +29,7 @@ RSpec.describe AirQuality, type: :model do
       ssc = soft_stub_capabilities
       @aq.fetch_or_register
       expect(ssrd).to have_been_requested.times(1)
-      expect(ssc).to have_been_requested.times(3)
+      expect(ssc).to have_been_requested.times(1)
     end
 
     it 'correctly register resources' do

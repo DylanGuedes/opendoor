@@ -25,6 +25,7 @@ RSpec.describe Weather, type: :model do
     end
 
     it 'ensure capabilities exist' do
+      ssrr = soft_stub_resource_registration('asdf1234')
       ssrd = soft_stub_resource_data('asdf1234')
       ssc = soft_stub_capabilities
       @wt.fetch_or_register
@@ -33,8 +34,8 @@ RSpec.describe Weather, type: :model do
     end
 
     it 'correctly register resources' do
-      ssrd = soft_stub_resource_data('asdf1234')
       ssrr = soft_stub_resource_registration('asdf1234')
+      ssrd = soft_stub_resource_data('asdf1234')
       ssrds = soft_stub_resource_data_sending('asdf1234')
       ssc = soft_stub_capabilities
 

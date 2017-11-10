@@ -1,14 +1,20 @@
 class Weather < ApplicationRecord
   belongs_to :platform
   validates :platform, presence: true
+  validates :worker_uuid, presence: true
+  validates :lat, presence: true
+  validates :lon, presence: true
 
   include InterscityResource
 
   def fetch_from_platform
+    if not self.uuid
+      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
+    end
+
     platform_url = self.platform.url
     url = platform_url + "/catalog/resources/#{self.uuid}"
-    response = RestClient.get(url)
-    response ? true : false
+    RestClient.get(url)
   end
 
   def self.capabilities
@@ -33,14 +39,14 @@ class Weather < ApplicationRecord
     {
       lat: self.lat,
       lon: self.lon,
-      description: "#{self.neighborhood} weather",
+      description: "#{self.worker_uuid} weather",
       capabilities: [
         'weather'
       ],
       status: "active",
-      neighborhood: self.neighborhood,
-      state: self.neighborhood,
-      country: self.neighborhood
+      neighborhood: self.worker_uuid,
+      state: self.worker_uuid,
+      country: self.worker_uuid
     }
   end
 
@@ -85,6 +91,10 @@ class Weather < ApplicationRecord
 
   def self.mount_resource entry
     coords = Geocoder.coordinates(entry[:neighborhood])
+    if not coords
+      raise "Geocoder didn't solved #{entry[:neighborhood]}"
+    end
+
     {
       worker: AirQuality.workers[:cetesb_gatherer_worker],
       worker_uuid: entry[:neighborhood],
