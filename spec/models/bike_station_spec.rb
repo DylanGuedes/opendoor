@@ -27,7 +27,7 @@ RSpec.describe BikeStation, type: :model do
       ssc = soft_stub_capabilities
       @bs.fetch_or_register
       expect(ssrd).to have_been_requested.times(1)
-      expect(ssc).to have_been_requested.times(5)
+      expect(ssc).to have_been_requested.times(1)
     end
 
     it 'correctly register resources' do

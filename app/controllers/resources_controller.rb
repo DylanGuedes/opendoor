@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [AirQuality, Weather]
+  RESOURCE_TYPES = [AirQuality, Weather, BikeStation]
 
   def index
     @resources = []
@@ -11,6 +11,13 @@ class ResourcesController < ApplicationController
   def fetch_cetesb_data
     if cookies[:instance_id]
       CetesbGathererWorker.perform_async(cookies[:instance_id])
+    end
+    redirect_to resources_path
+  end
+
+  def fetch_citybik_data
+    if cookies[:instance_id]
+      CitybikGathererWorker.perform_async(cookies[:instance_id])
     end
     redirect_to resources_path
   end

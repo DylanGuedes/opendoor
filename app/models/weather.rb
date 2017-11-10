@@ -63,25 +63,10 @@ class Weather < ApplicationRecord
     data[:weather] = [
       {
         temperature: entry[:temperature],
-        timestamp: DateTime.now.to_s
-      },
-      {
         thermal_sensation: entry[:index],
-        timestamp: DateTime.now.to_s
-      },
-      {
         wind_speed: entry[:polluting],
-        timestamp: DateTime.now.to_s
-      },
-      {
         humidity: entry[:humidity],
-        timestamp: DateTime.now.to_s
-      },
-      {
         pressure: entry[:pressure],
-        timestamp: DateTime.now.to_s
-      },
-      {
         neighborhood: entry[:neighborhood],
         timestamp: DateTime.now.to_s
       }
