@@ -11,7 +11,7 @@ class CitybikGathererWorker
     @@cron_scheduled = true
   end
 
-  NETWORK_IDS = ["bikesantos"]
+  NETWORK_IDS = ["bikesampa"]
   BASE_URL = "https://api.citybik.es/v2/"
 
   def perform(platform_id)

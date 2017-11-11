@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [FreeWifiStation, Weather, BikeStation, AirQuality]
+  RESOURCE_TYPES = [Weather, BikeStation, AirQuality]
 
   def index
     @resources = []
@@ -42,7 +42,7 @@ class ResourcesController < ApplicationController
 
   def dump_recovery
     @platforms = Platform.all.map{|p| [p.url, p.id]}
-    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"], ["BikeStation", "BikeStation"]
+    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"], ["BikeStation", "BikeStation"] ]
   end
 
   def dump_and_inject
