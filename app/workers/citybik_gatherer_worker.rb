@@ -45,7 +45,8 @@ class CitybikGathererWorker
             {
 
               timestamp: Time.now.getutc.to_s,
-              free_slots: station["free_bikes"]
+              free_bikes: station["free_bikes"],
+              bike_slots: station["slots"]
             }
           ]
 

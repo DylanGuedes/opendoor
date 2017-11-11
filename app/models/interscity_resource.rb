@@ -11,7 +11,9 @@ module InterscityResource
   end
 
   def fetch_from_platform
-    raise "You should override #fetch_from_platform"
+    platform_url = self.platform.url
+    url = platform_url + "/catalog/resources/#{self.uuid}"
+    RestClient.get(url)
   end
 
   def ensure_capabilities_exist(platform_url, capabilities)
@@ -41,7 +43,6 @@ module InterscityResource
 
     if self.uuid.blank? or not fetch_from_platform
       begin
-        puts "DOC: #{doc}"
         response = RestClient.post(url, {data: doc})
         response = JSON.parse(response)
         self.uuid = response["data"]["uuid"]
@@ -59,7 +60,7 @@ module InterscityResource
     url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
 
     begin
-      puts "NEW_DATA TO SEND: #{new_data}"
+      puts "Updating data: #{new_data}"
       # response = RestClient.post(url, new_data)
       puts "Resource #{self.uuid} #{'updated'.blue}"
     rescue RestClient::Exception => e

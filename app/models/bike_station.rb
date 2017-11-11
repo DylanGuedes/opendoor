@@ -8,12 +8,6 @@ class BikeStation < ApplicationRecord
 
   include InterscityResource
 
-  def fetch_from_platform
-    platform_url = self.platform.url
-    url = platform_url + "/catalog/resources/#{self.uuid}"
-    RestClient.get(url)
-  end
-
   def self.capabilities
     [
       {
@@ -27,7 +21,7 @@ class BikeStation < ApplicationRecord
         title: 'slots_monitoring',
         typ: 'sensor',
         description: %{
-          Number of available bike slots
+          Number of available bike slots and free bikes.
         }
       }
     ]
