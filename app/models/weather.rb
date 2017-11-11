@@ -7,16 +7,6 @@ class Weather < ApplicationRecord
 
   include InterscityResource
 
-  def fetch_from_platform
-    if not self.uuid
-      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
-    end
-
-    platform_url = self.platform.url
-    url = platform_url + "/catalog/resources/#{self.uuid}"
-    RestClient.get(url)
-  end
-
   def self.capabilities
     [
       {

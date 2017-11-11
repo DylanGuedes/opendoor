@@ -7,16 +7,6 @@ class AirQuality < ApplicationRecord
 
   include InterscityResource
 
-  def fetch_from_platform
-    if not self.uuid
-      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
-    end
-
-    platform_url = self.platform.url
-    url = platform_url + "/catalog/resources/#{self.uuid}"
-    RestClient.get(url)
-  end
-
   def self.capabilities
     [
       {
@@ -62,15 +52,9 @@ class AirQuality < ApplicationRecord
     data[:air_quality] = [
       {
         air_quality: entry[:quality],
-        timestamp: DateTime.now.to_s
-      },
-      {
+        timestamp: DateTime.now.to_s,
         polluting_index: entry[:index],
-        timestamp: DateTime.now.to_s
-      },
-      {
-        polluting: entry[:polluting],
-        timestamp: DateTime.now.to_s
+        polluting: entry[:polluting]
       }
     ]
     data

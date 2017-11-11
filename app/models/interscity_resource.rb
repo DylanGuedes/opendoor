@@ -11,6 +11,10 @@ module InterscityResource
   end
 
   def fetch_from_platform
+    if not self.uuid
+      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
+    end
+
     platform_url = self.platform.url
     url = platform_url + "/catalog/resources/#{self.uuid}"
     RestClient.get(url)
@@ -35,6 +39,10 @@ module InterscityResource
   end
 
   def fetch_or_register
+    if not self.platform
+      raise 'Resource without a platform.'
+    end
+
     platform_url = self.platform.url
     url = platform_url + "/adaptor/components"
 
