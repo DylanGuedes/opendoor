@@ -34,7 +34,7 @@ class CronsSchedulingController < ApplicationController
     end
 
     if cookies[:instance_id]
-      Sidekiq::Cron::Job.create(name: 'Cetesb cron',
+      Sidekiq::Cron::Job.create(name: 'Citybik cron',
                                 cron: "*/#{interval} * * * *",
                                 class: 'CitybikGathererWorker',
                                 args: [params[:platform_id]])
