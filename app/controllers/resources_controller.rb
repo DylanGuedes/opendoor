@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [AirQuality, Weather, BikeStation]
+  RESOURCE_TYPES = [FreeWifiStation]
 
   def index
     @resources = []

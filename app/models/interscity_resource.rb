@@ -41,6 +41,7 @@ module InterscityResource
 
     if self.uuid.blank? or not fetch_from_platform
       begin
+        puts "DOC: #{doc}"
         response = RestClient.post(url, {data: doc})
         response = JSON.parse(response)
         self.uuid = response["data"]["uuid"]
@@ -59,7 +60,7 @@ module InterscityResource
 
     begin
       puts "NEW_DATA TO SEND: #{new_data}"
-      response = RestClient.post(url, new_data)
+      # response = RestClient.post(url, new_data)
       puts "Resource #{self.uuid} #{'updated'.blue}"
     rescue RestClient::Exception => e
       puts "ERROR: Could not send data from resource. Description: #{e.response}".red
