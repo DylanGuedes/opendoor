@@ -50,7 +50,11 @@ class CetesbGathererWorker
     data[3].text
   end
 
-  def perform(platform_id)
+  def perform(platform_id, plat_id=nil)
+platform = Platform.find(platform_id)
+if not platform
+raise 'Invalid platform.'
+end
     cetesb_data = fetch_cetesb_page
 
     cetesb_data.element_children.each do |line|
