@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [AirQuality, Weather]
+  RESOURCE_TYPES = [Weather, BikeStation, AirQuality]
 
   def index
     @resources = []
@@ -10,32 +10,28 @@ class ResourcesController < ApplicationController
 
   def fetch_cetesb_data
     if cookies[:instance_id]
-      CetesbGathererWorker.perform_async(cookies[:instance_id])
+      CetesbGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end
 
-  def active_cetesb_cron
-    if cookies[:instance_id] and not CetesbGathererWorker.cron_running
-      Sidekiq::Cron::Job.create(name: 'Cetesb every-5min',
-                                cron: '*/5 * * * *',
-                                class: 'CetesbGathererWorker',
-                                args: [AirQuality.workers[:cetesb_gatherer_worker], cookies[:instance_id]])
-      CetesbGathererWorker.turn_on
+  def fetch_citybik_data
+    if cookies[:instance_id]
+      CitybikGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end
 
   def fetch_accuweather_data
     if cookies[:instance_id]
-      AccuweatherGathererWorker.perform_async(cookies[:instance_id])
+      AccuweatherGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end
 
   def dump_recovery
     @platforms = Platform.all.map{|p| [p.url, p.id]}
-    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"] ]
+    @desired_resource = [ ["Air Quality", "AirQuality"], ["Weather", "Weather"], ["BikeStation", "BikeStation"] ]
   end
 
   def dump_and_inject

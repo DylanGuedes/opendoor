@@ -11,7 +11,13 @@ module InterscityResource
   end
 
   def fetch_from_platform
-    raise "You should override #fetch_from_platform"
+    if not self.uuid
+      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
+    end
+
+    platform_url = self.platform.url
+    url = platform_url + "/catalog/resources/#{self.uuid}"
+    RestClient.get(url)
   end
 
   def ensure_capabilities_exist(platform_url, capabilities)
@@ -33,6 +39,10 @@ module InterscityResource
   end
 
   def fetch_or_register
+    if not self.platform
+      raise 'Resource without a platform.'
+    end
+
     platform_url = self.platform.url
     url = platform_url + "/adaptor/components"
 
@@ -55,13 +65,17 @@ module InterscityResource
   end
 
   def send_data(new_data)
-    url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
-
-    begin
-      response = RestClient.post(url, new_data)
-      puts "Resource #{self.uuid} #{'updated'.blue}"
-    rescue RestClient::Exception => e
-      puts "ERROR: Could not send data from resource. Description: #{e.response}".red
+    if self.platform
+      url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
+      begin
+        puts "Updating data: #{new_data}"
+        response = RestClient.post(url, new_data)
+        puts "Resource #{self.uuid} #{'updated'.blue}"
+      rescue RestClient::Exception => e
+        puts "ERROR: Could not send data from resource. Description: #{e.response}".red
+      end
+    else
+      raise 'Resource #{self.uuid} without a platform.'
     end
   end
 end

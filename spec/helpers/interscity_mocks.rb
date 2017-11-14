@@ -51,22 +51,77 @@ module InterscityMocks
   end
 
   def accuweather_index_stub
-    file = File.open("spec/accuweather_index.html")
-    data = file.read
-    file.close
+    agent = Mechanize.new
+    data = agent.get("file:///#{Dir.pwd}/accuweather_index")
 
     stub_request(:get, "http://www.accuweather.com/pt/br/brazil-weather").
       with{|request| not request.headers.blank?}.
-      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+      to_return(status: 200, body: data.body, headers: {
+      'Content-Type': 'text/html'
+    })
   end
 
   def stub_accuweather_posts
-    file = File.open("spec/accuweather_region_page.html")
-    data = file.read
-    file.close
+    agent = Mechanize.new
 
+    data = agent.get("file:///#{Dir.pwd}/accuweather_anhanguera_page")
     stub_request(:post, "https://www.accuweather.com/pt/search-locations").
-      with{|request| not request.body.blank?}.
-      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+      with{|request| not request.headers.blank?}.
+      to_return(status: 200, body: data.body, headers: {'Content-Type': 'text/html'})
+
+    data = agent.get("file:///#{Dir.pwd}/accuweather_temperature_click")
+
+    current_weather_urls = [
+      "https://www.accuweather.com/pt/us/new-york-ny/10007/current-weather/349727",
+      "https://www.accuweather.com/pt/br/anhanguera/2310876/current-weather/2310876"
+    ]
+
+    current_weather_urls.each do |url|
+      stub_request(:get, url).
+        with{|request| not request.headers.blank?}.
+        to_return(status: 200, body: data.body, headers: {'Content-Type': 'text/html'})
+    end
+  end
+
+  def soft_stub_citybik_request
+    data = {
+      network: {
+        company: [
+          "Mobilicidade Tecnologia LTD",
+          "Grupo Serttel LTDA"
+        ],
+        href: "/v2/networks/bikesampa",
+        id: "bikesampa",
+        location: {
+          city: "S\u00e3o Paulo",
+          country: "BR",
+          latitude: -23.55,
+          longitude: -46.6333
+        },
+        name: "BikeSampa",
+        stations: [
+          {
+            empty_slots: 12,
+            extra: {
+              address: "Rua Manoel de Nobrega 71",
+              slots: 12,
+              status: "open",
+              uid: 15
+            },
+            free_bikes: 0,
+            id: "38ae2324128bb287e9c0e65ff86bbe70",
+            latitude: -23.568267,
+            longitude: -46.649108,
+            name: "Metr\u00f4 Brigadeiro",
+            timestamp: "2017-11-14T17:15:33.947000Z"
+          },
+        ]
+      }
+    }.to_json
+
+    url = "https://api.citybik.es/v2//networks/bikesampa"
+      stub_request(:get, url).
+        with{|request| not request.headers.blank?}.
+        to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
   end
 end

@@ -1,20 +1,22 @@
 class Weather < ApplicationRecord
   belongs_to :platform
   validates :platform, presence: true
-  validates :worker_uuid, presence: true
   validates :lat, presence: true
   validates :lon, presence: true
+  validates :worker_uuid, presence: true
+  validate :worker_uuid_should_be_equal_to_identifier_attr
 
   include InterscityResource
 
-  def fetch_from_platform
-    if not self.uuid
-      raise "Resource from #{self.worker_uuid} doesn't have an uuid."
+  def worker_uuid_should_be_equal_to_identifier_attr
+    unique_attr = Weather.identifier_attr
+    if worker_uuid != self.send(unique_attr)
+      errors.add(:worker_uuid, "should be equal to #{unique_attr}")
     end
+  end
 
-    platform_url = self.platform.url
-    url = platform_url + "/catalog/resources/#{self.uuid}"
-    RestClient.get(url)
+  def equal_to_unique_attr?
+    worker_uuid == send(Weather.identifier_attr)
   end
 
   def self.capabilities
@@ -63,25 +65,10 @@ class Weather < ApplicationRecord
     data[:weather] = [
       {
         temperature: entry[:temperature],
-        timestamp: DateTime.now.to_s
-      },
-      {
         thermal_sensation: entry[:index],
-        timestamp: DateTime.now.to_s
-      },
-      {
         wind_speed: entry[:polluting],
-        timestamp: DateTime.now.to_s
-      },
-      {
         humidity: entry[:humidity],
-        timestamp: DateTime.now.to_s
-      },
-      {
         pressure: entry[:pressure],
-        timestamp: DateTime.now.to_s
-      },
-      {
         neighborhood: entry[:neighborhood],
         timestamp: DateTime.now.to_s
       }
@@ -108,5 +95,9 @@ class Weather < ApplicationRecord
 
   def self.collection
     :weather
+  end
+
+  def self.identifier_attr
+    :region
   end
 end

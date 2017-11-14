@@ -7,6 +7,10 @@ class CronsSchedulingController < ApplicationController
     @platforms = Platform.all.map{|p| [p.url, p.id]}
   end
 
+  def citybik_cron_index
+    @platforms = Platform.all.map{|p| [p.url, p.id]}
+  end
+
   def cetesb_cron_activate
     interval = 5
     if params[:interval]
@@ -19,6 +23,22 @@ class CronsSchedulingController < ApplicationController
                                 class: 'CetesbGathererWorker',
                                 args: [params[:platform_id]])
       CetesbGathererWorker.turn_on
+    end
+    redirect_to resources_path
+  end
+
+  def citybik_cron_activate
+    interval = 5
+    if params[:interval]
+      interval = params[:interval].to_i
+    end
+
+    if cookies[:instance_id]
+      Sidekiq::Cron::Job.create(name: 'Citybik cron',
+                                cron: "*/#{interval} * * * *",
+                                class: 'CitybikGathererWorker',
+                                args: [params[:platform_id]])
+      CitybikGathererWorker.turn_on
     end
     redirect_to resources_path
   end

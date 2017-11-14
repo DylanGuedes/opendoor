@@ -20,27 +20,31 @@ class SpDataWorker
   # Example: SpDataWorker.perform_async('Ibirapuera', 1,
   # 'mongodb://127.0.0.1:27017', 'sp', AirQuality)
   def perform(platform_id, db_host, db_name, klass,limit=nil)
-    db = Mongo::Client.new(db_host, :database => db_name)
-    klass = klass.constantize # BUG: Sidekiq turns class into a string
-    collection = db[klass.collection]
-    idx = 0
-    collection.find.each do |entry|
-      idx += 1
-      if idx == limit
-        break
-      end
-      entry[:platform_id] = platform_id
-      attrs = klass.fetch(entry)
-      resource = klass.find_by(attrs)
+    begin
+      db = Mongo::Client.new(db_host, :database => db_name)
+      klass = klass.constantize # BUG: Sidekiq turns class into a string
+      collection = db[klass.collection]
+      idx = 0
+      collection.find.each do |entry|
+        if idx == limit
+          break
+        end
+        idx += 1
+        entry[:platform_id] = platform_id
+        attrs = klass.fetch(entry)
+        resource = klass.find_by(attrs)
 
-      if resource and resource.uuid
-        new_data = klass.mount_data_from(entry)
-        resource.send_data({data: new_data})
-      else
-        data = klass.mount_resource(entry)
-        resource = klass.create(data)
-        resource.fetch_or_register
+        if resource and resource.uuid
+          new_data = klass.mount_data_from(entry)
+          resource.send_data({data: new_data})
+        else
+          data = klass.mount_resource(entry)
+          resource = klass.create(data)
+          resource.fetch_or_register
+        end
       end
+    rescue
+      "You don't have a valid mongodb config."
     end
   end
 end
