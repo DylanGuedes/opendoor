@@ -10,32 +10,21 @@ class ResourcesController < ApplicationController
 
   def fetch_cetesb_data
     if cookies[:instance_id]
-      CetesbGathererWorker.perform_async(cookies[:instance_id])
+      CetesbGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end
 
   def fetch_citybik_data
     if cookies[:instance_id]
-      CitybikGathererWorker.perform_async(cookies[:instance_id])
-    end
-    redirect_to resources_path
-  end
-
-  def active_cetesb_cron
-    if cookies[:instance_id] and not CetesbGathererWorker.cron_running
-      Sidekiq::Cron::Job.create(name: 'Cetesb every-5min',
-                                cron: '*/5 * * * *',
-                                class: 'CetesbGathererWorker',
-                                args: [AirQuality.workers[:cetesb_gatherer_worker], cookies[:instance_id]])
-      CetesbGathererWorker.turn_on
+      CitybikGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end
 
   def fetch_accuweather_data
     if cookies[:instance_id]
-      AccuweatherGathererWorker.perform_async(cookies[:instance_id])
+      AccuweatherGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end

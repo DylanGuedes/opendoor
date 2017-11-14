@@ -1,9 +1,9 @@
 FactoryGirl.define do
   factory :weather do
-    worker_uuid 'asdf1234'
+    worker_uuid 'saopaulo'
     worker AirQuality.workers[:cetesb_gatherer_worker]
     uuid 'asdf1234'
-    region 'sao-paulo'
+    region 'saopaulo'
     lat '-23'
     lon '-25'
     status AirQuality.steps[:not_registered]

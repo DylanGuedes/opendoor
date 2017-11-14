@@ -15,6 +15,8 @@ class CitybikGathererWorker
   BASE_URL = "https://api.citybik.es/v2/"
 
   def perform(platform_id)
+    puts "PLATFORM_ID: ", platform_id
+    puts "CLASS: ", platform_id.class
     NETWORK_IDS.each do |ni|
       url = BASE_URL + "/networks/#{ni}"
       response = RestClient.get(url)

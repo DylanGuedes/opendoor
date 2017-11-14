@@ -67,13 +67,15 @@ module InterscityResource
   def send_data(new_data)
     if self.platform
       url = self.platform.url + "/adaptor/components/#{self.uuid}/data"
-		begin
-			puts "Updating data: #{new_data}"
-			response = RestClient.post(url, new_data)
-			puts "Resource #{self.uuid} #{'updated'.blue}"
-		rescue RestClient::Exception => e
-			puts "ERROR: Could not send data from resource. Description: #{e.response}".red
-		end
-	end
+      begin
+        puts "Updating data: #{new_data}"
+        response = RestClient.post(url, new_data)
+        puts "Resource #{self.uuid} #{'updated'.blue}"
+      rescue RestClient::Exception => e
+        puts "ERROR: Could not send data from resource. Description: #{e.response}".red
+      end
+    else
+      raise 'Resource #{self.uuid} without a platform.'
+    end
   end
 end

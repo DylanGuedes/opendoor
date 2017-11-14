@@ -20,6 +20,7 @@ class SpDataWorker
   # Example: SpDataWorker.perform_async('Ibirapuera', 1,
   # 'mongodb://127.0.0.1:27017', 'sp', AirQuality)
   def perform(platform_id, db_host, db_name, klass,limit=nil)
+    puts "HERE"
     db = Mongo::Client.new(db_host, :database => db_name)
     klass = klass.constantize # BUG: Sidekiq turns class into a string
     collection = db[klass.collection]

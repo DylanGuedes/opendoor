@@ -22,6 +22,9 @@ class AccuweatherGathererWorker
   end
 
   def fetch_accuweather_resource(form, neighborhood)
+    if not form
+      raise 'Invalid html#form'
+    end
     form['s'] = "#{neighborhood}, São Paulo"
     form.submit
   end
@@ -90,6 +93,7 @@ class AccuweatherGathererWorker
   end
 
   def perform(platform_id)
+    platform = Platform.find(platform_id)
     form = fetch_accuweather_index
 
     config_file = load_neighborhood_file

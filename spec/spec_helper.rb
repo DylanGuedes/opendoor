@@ -14,6 +14,13 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
+require 'simplecov'
+SimpleCov.start do
+  add_filter '/vendor/'
+  add_filter '/spec/'
+  add_filter '/test/'
+end
+
 require 'factory_girl_rails'
 
 RSpec.configure do |config|

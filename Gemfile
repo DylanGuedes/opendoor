@@ -67,3 +67,9 @@ gem 'webmock', require: false
 gem 'sidekiq-cron'
 gem 'mongo'
 gem 'geocoder'
+gem 'simplecov', :require => false, :group => :test
+
+group :test do
+  gem 'rspec-sidekiq'
+end
+

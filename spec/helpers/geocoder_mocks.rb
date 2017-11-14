@@ -60,7 +60,7 @@ module GeocoderMocks
     }.to_json
     url = "http://maps.googleapis.com/maps/api/geocode/json?address=#{address}&language=en&sensor=false"
     stub_request(:get, url).
-      with{|request| not request.headers.blank?}.
+      with{|request| true}.
       to_return(status: 200, body: r, headers: {})
   end
 end

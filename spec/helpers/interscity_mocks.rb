@@ -51,22 +51,41 @@ module InterscityMocks
   end
 
   def accuweather_index_stub
-    file = File.open("spec/accuweather_index.html")
-    data = file.read
-    file.close
+    agent = Mechanize.new
+    data = agent.get("file:///#{Dir.pwd}/accuweather_index")
 
     stub_request(:get, "http://www.accuweather.com/pt/br/brazil-weather").
       with{|request| not request.headers.blank?}.
-      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+      to_return(status: 200, body: data.body, headers: {
+      'Content-Type': 'text/html'
+    })
   end
 
   def stub_accuweather_posts
-    file = File.open("spec/accuweather_region_page.html")
-    data = file.read
-    file.close
+    agent = Mechanize.new
 
+    data = agent.get("file:///#{Dir.pwd}/accuweather_anhanguera_page")
     stub_request(:post, "https://www.accuweather.com/pt/search-locations").
-      with{|request| not request.body.blank?}.
-      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+      with{|request| not request.headers.blank?}.
+      to_return(status: 200, body: data.body, headers: {'Content-Type': 'text/html'})
+
+    # url = "https://www.accuweather.com/pt/br/anhanguera/2310876/weather-forecast/2310876"
+    # data = agent.get("file:///#{Dir.pwd}/accuweather_anhanguera_page")
+    # stub_request(:get, url).
+    #   with{|request| not request.headers.blank?}.
+    #   to_return(status: 200, body: data.body, headers: {'Content-Type': 'text/html'})
+
+    data = agent.get("file:///#{Dir.pwd}/accuweather_temperature_click")
+
+    current_weather_urls = [
+      "https://www.accuweather.com/pt/us/new-york-ny/10007/current-weather/349727",
+      "https://www.accuweather.com/pt/br/anhanguera/2310876/current-weather/2310876"
+    ]
+
+    current_weather_urls.each do |url|
+      stub_request(:get, url).
+        with{|request| not request.headers.blank?}.
+        to_return(status: 200, body: data.body, headers: {'Content-Type': 'text/html'})
+    end
   end
 end
