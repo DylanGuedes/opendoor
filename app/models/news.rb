@@ -66,7 +66,7 @@ class News < ApplicationRecord
       lat: entry['place_geolocation'][0].split(',')[0],
       lon: entry['place_geolocation'][0].split(',')[1],
       post_id: entry['post_id'],
-      platform_id: entry['platform_id']
+      platform_id: entry['platform_id'],
       status: 'active'
     }
   end

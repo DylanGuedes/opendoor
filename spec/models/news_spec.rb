@@ -13,7 +13,7 @@ RSpec.describe News, type: :model do
   describe 'valid params' do
     it 'works well' do
       platform = FactoryGirl.create(:platform)
-      attrs = FactoryGirl.attributes_for(:air_quality, platform_id: platform_id)
+      attrs = FactoryGirl.attributes_for(:news, platform_id: platform.id)
       news = News.new(attrs)
       expect(news).to be_valid
     end

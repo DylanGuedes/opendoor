@@ -17,9 +17,9 @@ class CatracalivreGathererWorker
 
   def perform(platform_id)
     platform = Platform.find(platform_id)
-    url = BASE_URL + "/select/q=\"places_cidades.id:#{CITY_ID}\" AND
-                  post_publish_date:[NOW-#{DAYS_TO_MONITORING} TO NOW]&wt=json"
-    response = RestClient.get(url)
+    url = BASE_URL + "/select/?q=places_cidades.id:#{CITY_ID} AND"\
+            " post_publish_date:[NOW-#{DAYS_TO_MONITORING}DAYS TO NOW]&wt=json"
+    response = JSON.parse(RestClient.get(url))
     docs = response['response']['docs']
     docs.each do |post|
       attrs = {
@@ -31,7 +31,7 @@ class CatracalivreGathererWorker
       resource = News.where(attrs)
 
       case
-      when resource.cout == 1
+      when resource.count == 1
         resource = resource.first
 
         new_data = {}
