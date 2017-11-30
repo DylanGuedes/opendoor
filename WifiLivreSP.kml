@@ -1,0 +1,3955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Localidades Atuais</name>
+    <Style id="icon-1345-labelson">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>http://www.gstatic.com/mapspro/images/stock/1345-poi-tv-radio.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>CENTRO CULTURAL SÃO PAULO</name>
+      <description><![CDATA[Nº: 11<br>Endereço: Rua Vergueiro, 1000 - Paraíso, São Paulo, SP, Brasil<br>Distrito: Liberdade<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/11/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 30.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>11.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Vergueiro, 1000 - Paraíso, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Liberdade</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/11/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>30.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6402102,-23.5712466,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DO AROUCHE</name>
+      <address>Largo do Arouche, 394, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 10<br>Endereço: Largo do Arouche, 394, São Paulo, SP, Brasil<br>Distrito: República<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/24/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 10.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>10.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo do Arouche, 394, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>República</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/24/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>10.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DO CAMBUCI</name>
+      <address>Rua da Independência, 94, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 4<br>Endereço: Rua da Independência, 94, São Paulo, SP, Brasil<br>Distrito: Cambuci<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 9/5/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 3.220 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>4.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua da Independência, 94, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cambuci</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/5/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.220 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DO PAISSANDÚ</name>
+      <address>Largo do Paissandú, 40, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 14<br>Endereço: Largo do Paissandú, 40, São Paulo, SP, Brasil<br>Distrito: República<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/26/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 8.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>14.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo do Paissandú, 40, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>República</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.500 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO SANTA CECILIA</name>
+      <address>Largo Santa Cecília, 62, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 17<br>Endereço: Largo Santa Cecília, 62, São Paulo, SP, Brasil<br>Distrito: Santa Cecília<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/28/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 16.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>17.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo Santa Cecília, 62, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Santa Cecília</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/28/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>16.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO SÃO BENTO</name>
+      <description><![CDATA[Nº: 18<br>Endereço: Rua Libero Badaró, 641, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/30/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 7.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>18.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Libero Badaró, 641, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/30/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>7.500 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6341017,-23.5440434,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO SÃO FRANCISCO</name>
+      <description><![CDATA[Nº: 16<br>Endereço: Largo São Francisco, 95, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 7/10/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 2.660 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>16.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo São Francisco, 95, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.660 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6374868,-23.5494444,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MASP</name>
+      <description><![CDATA[Nº: 1<br>Endereço: Av. Paulista, 1578, 01310-200, São Paulo, SP, Brasil<br>Distrito: Bela Vista<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 3/5/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 5.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>1.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Paulista, 1578, 01310-200, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Bela Vista</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/5/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6559696,-23.5614948,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>MERCADO MUNICIPAL</name>
+      <address>Rua da Cantareira, 306 , São Paulo, SP</address>
+      <description><![CDATA[Nº: 22<br>Endereço: Rua da Cantareira, 306 , São Paulo, SP<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 8/12/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 21.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>22.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua da Cantareira, 306 , São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/12/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>21.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DA ACLIMAÇÃO</name>
+      <address>R. Muniz de Souza, 1119, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 8<br>Endereço: R. Muniz de Souza, 1119, São Paulo, SP, Brasil<br>Distrito: Liberdade<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/10/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 106.600 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>8.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>R. Muniz de Souza, 1119, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Liberdade</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>106.600 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DA LUZ</name>
+      <address>Praça da Luz, Bom Retiro, São Paulo, SP</address>
+      <description><![CDATA[Nº: 3<br>Endereço: Praça da Luz, Bom Retiro, São Paulo, SP<br>Distrito: Bom Retiro<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 5/9/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 113.400 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>3.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça da Luz, Bom Retiro, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Bom Retiro</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/9/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>113.400 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DOM PEDRO II</name>
+      <address>Rua Jorge Azem, 21, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 21<br>Endereço: Rua Jorge Azem, 21, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 7/23/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 22.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>21.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Jorge Azem, 21, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/23/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>22.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PÁTEO DO COLÉGIO</name>
+      <description><![CDATA[Nº: 19<br>Endereço: Praça Pátio do Colégio, 2, São Paulo, 01016-040, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 7/4/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 11.600 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>19.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Pátio do Colégio, 2, São Paulo, 01016-040, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/4/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>11.600 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.633149,-23.5480448,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA BANDEIRA</name>
+      <address>Passarelo dos Piques / Praça da Bandeira, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 13<br>Endereço: Passarelo dos Piques / Praça da Bandeira, São Paulo, SP, Brasil<br>Distrito: República<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/26/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 5.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>13.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Passarelo dos Piques / Praça da Bandeira, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>República</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.200 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA LIBERDADE</name>
+      <address>Praça da Liberdade, 264, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 9<br>Endereço: Praça da Liberdade, 264, São Paulo, SP, Brasil<br>Distrito: Liberdade<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/10/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 3.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>9.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça da Liberdade, 264, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Liberdade</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA REPÚBLICA</name>
+      <description><![CDATA[Nº: 15<br>Endereço: Avenida do Ipiranga, 503, São Paulo, SP, Brasil<br>Distrito: República<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/27/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 29.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>15.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida do Ipiranga, 503, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>República</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/27/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>29.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6418369,-23.5435848,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA SÉ</name>
+      <description><![CDATA[Nº: 23<br>Endereço: Praça da Sé, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 8/14/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 46.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>23.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça da Sé, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>46.200 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6341216,-23.5507096,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO PATRIARCA</name>
+      <address>Praça do Patriarca, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 20<br>Endereço: Praça do Patriarca, São Paulo, SP, Brasil<br>Distrito: Sé<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 7/16/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 4.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>20.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça do Patriarca, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/16/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DON JOSÉ GASPAR</name>
+      <description><![CDATA[Nº: 5<br>Endereço: Rua Doutor Bráulio Gomes, 49, São Paulo, SP, Brasil<br>Distrito: Consolação<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 5/21/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 12.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>5.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Doutor Bráulio Gomes, 49, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Consolação</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/21/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>12.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6420856,-23.5471715,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DON ORIONE</name>
+      <description><![CDATA[Nº: 2<br>Endereço: Viaduto Armando Puglisi, São Paulo, SP, Brasil<br>Distrito: Bela Vista<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 3/5/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 5.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>2.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Viaduto Armando Puglisi, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Bela Vista</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/5/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6459575,-23.5603066,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA RAMOS DE AZEVEDO</name>
+      <description><![CDATA[Nº: 12<br>Endereço: Rua Coronel Xavier de Toledo, 254, São Paulo, SP, Brasil<br>Distrito: República<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 6/25/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 16.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>12.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Coronel Xavier de Toledo, 254, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>República</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/25/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>16.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6381441,-23.5457285,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ROOSEVELT</name>
+      <address>Praça Franklin Roosevelt, S/N, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 7<br>Endereço: Praça Franklin Roosevelt, S/N, São Paulo, SP, Brasil<br>Distrito: Consolação<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 5/29/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 15.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>7.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Franklin Roosevelt, S/N, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Consolação</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>15.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ROTARY</name>
+      <address>Rua Major Sertório, 561, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 6<br>Endereço: Rua Major Sertório, 561, São Paulo, SP, Brasil<br>Distrito: Consolação<br>Subprefeitura: Sé<br>Zona: Centro<br>Data  Instalação: 5/26/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 8.800 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>6.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Major Sertório, 561, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Consolação</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Centro</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.800 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DA CONCÓRDIA</name>
+      <address>Largo da Concórdia, 91, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 27<br>Endereço: Largo da Concórdia, 91, São Paulo, SP, Brasil<br>Distrito: Brás<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/28/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 12.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>27.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo da Concórdia, 91, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Brás</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/28/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>12.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DO ROSÁRIO</name>
+      <address>Largo do Rosário, 15, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 50<br>Endereço: Largo do Rosário, 15, São Paulo, SP, Brasil<br>Distrito: Penha<br>Subprefeitura: Penha<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 3.100 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>50.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo do Rosário, 15, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Penha</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Penha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.100 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE CHICO MENDES</name>
+      <description><![CDATA[Nº: 42<br>Endereço: Parque Chico Mendes - Rua Cembira, Vila Curuçá, São Paulo, SP<br>Distrito: Vila Curuçá<br>Subprefeitura: Itaim Paulista<br>Zona: Leste<br>Data  Instalação: 10/8/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 74.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>42.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Parque Chico Mendes - Rua Cembira, Vila Curuçá, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Curuçá</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaim Paulista</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>74.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.4291166,-23.5069439,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE ECOLÓGICO DA VILA PRUDENTE</name>
+      <address>Parque Ecológico Vila Prudente, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 59<br>Endereço: Parque Ecológico Vila Prudente, São Paulo, SP, Brasil<br>Distrito: Vila Prudente<br>Subprefeitura: Vila Prudente<br>Zona: Leste<br>Data  Instalação: 11/14/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 243.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>59.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Parque Ecológico Vila Prudente, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Prudente</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Prudente</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>243.200 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE LINEAR TIQUATIRA</name>
+      <description><![CDATA[Nº: 49<br>Endereço: Avenida Governador Carvalho Pinto, 1759, São Paulo, SP, Brasil<br>Distrito: Cangaíba<br>Subprefeitura: Penha<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 44.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>49.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida Governador Carvalho Pinto, 1759, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cangaíba</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Penha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>44.300 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.5328932,-23.5144297,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE RAUL SEIXAS</name>
+      <address>Rua Murmúrios da Tarde, 190, Jardim Bonifacio, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 46<br>Endereço: Rua Murmúrios da Tarde, 190, Jardim Bonifacio, São Paulo, SP, Brasil<br>Distrito: José Bonifácio<br>Subprefeitura: Itaquera<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 31.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>46.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Murmúrios da Tarde, 190, Jardim Bonifacio, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>José Bonifácio</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaquera</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>31.300 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE SANTA AMÉLIA</name>
+      <address>Rua Rio Contagem, 72, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 40<br>Endereço: Rua Rio Contagem, 72, São Paulo, SP, Brasil<br>Distrito: Itaim Paulista<br>Subprefeitura: Itaim Paulista<br>Zona: Leste<br>Data  Instalação: 10/1/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 66.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>40.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Rio Contagem, 72, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Itaim Paulista</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaim Paulista</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/1/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>66.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA AUGUSTO DOMINGUES ALVES MAIA</name>
+      <description><![CDATA[Nº: 47<br>Endereço: Rua Arcádia Paulistana, 375, São Paulo, SP, Brasil <br>Distrito: Parque do Carmo<br>Subprefeitura: Zona Leste<br>Zona: Leste<br>Data  Instalação: 2/9/2015<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 9.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>47.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Arcádia Paulistana, 375, São Paulo, SP, Brasil </value>
+        </Data>
+        <Data name="Distrito">
+          <value>Parque do Carmo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Zona Leste</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>2/9/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>9.500 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.4715807,-23.5651632,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA BRASIL - PRAÇA MÃE MENININHA DOS GANTOIS</name>
+      <address>Rua Cecília Porto, 9, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 45<br>Endereço: Rua Cecília Porto, 9, São Paulo, SP, Brasil<br>Distrito: José Bonifácio<br>Subprefeitura: Itaquera<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 17.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>45.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Cecília Porto, 9, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>José Bonifácio</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaquera</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>17.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA CECÍLIA MARQUES DE ARAÚJO</name>
+      <address>Rua Gonçalves de Oliveira, 13, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 39<br>Endereço: Rua Gonçalves de Oliveira, 13, São Paulo, SP, Brasil<br>Distrito: Lajeado<br>Subprefeitura: Guaianases<br>Zona: Leste<br>Data  Instalação: 10/1/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 2.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>39.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Gonçalves de Oliveira, 13, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Lajeado</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Guaianases</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/1/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA CIRO PONTES </name>
+      <address>Rua Bresser, 2800, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 28<br>Endereço: Rua Bresser, 2800, São Paulo, SP, Brasil<br>Distrito: Mooca<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/29/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 15.400 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>28.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Bresser, 2800, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>15.400 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA CRAVEIRO DO CAMPO</name>
+      <address>Rua Kumaki Aoki, 1074, Jardim Helena, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 55<br>Endereço: Rua Kumaki Aoki, 1074, Jardim Helena, São Paulo, SP, Brasil<br>Distrito: Jardim Helena<br>Subprefeitura: São Miguel<br>Zona: Leste<br>Data  Instalação: 11/3/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 27.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>55.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Kumaki Aoki, 1074, Jardim Helena, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jardim Helena</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Miguel</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>27.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA CONQUISTA - PRAÇA VEREADOR JOÃO APARECIDO DE PAULA</name>
+      <address>Rua Dona Matilde, 479, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 51<br>Endereço: Rua Dona Matilde, 479, São Paulo, SP, Brasil<br>Distrito: Vila Matilde<br>Subprefeitura: Penha<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 7.400 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>51.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Dona Matilde, 479, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Matilde</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Penha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>7.400 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA ESTAÇÃO VILA MARA</name>
+      <address>Rua São Gonçalo do Rio das Pedras 1100, Vila Mara, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 36<br>Endereço: Rua São Gonçalo do Rio das Pedras 1100, Vila Mara, São Paulo, SP, Brasil<br>Distrito: Ermelino Matarazzo<br>Subprefeitura: Ermelino Matarazzo<br>Zona: Leste<br>Data  Instalação: 9/17/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 1.800 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>36.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua São Gonçalo do Rio das Pedras 1100, Vila Mara, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Ermelino Matarazzo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ermelino Matarazzo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/17/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.800 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DILVA GOMES MARTINS (COHAB 1)</name>
+      <address>Praça Dilva Gomes Martins, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 48<br>Endereço: Praça Dilva Gomes Martins, São Paulo, SP, Brasil<br>Distrito: Artur Alvim<br>Subprefeitura: Penha<br>Zona: Leste<br>Data  Instalação: 10/14/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 20.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>48.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Dilva Gomes Martins, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Artur Alvim</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Penha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/14/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>20.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO 65 - POMBAS URBANAS</name>
+      <description><![CDATA[Nº: 34<br>Endereço: Avenida dos Metalúrgicos, 2249, São Paulo, SP, Brasil<br>Distrito: Cidade Tiradentes<br>Subprefeitura: Cidade Tiradentes<br>Zona: Leste<br>Data  Instalação: 9/12/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 6.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>34.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida dos Metalúrgicos, 2249, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cidade Tiradentes</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Cidade Tiradentes</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/12/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>6.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.4002978,-23.6004194,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO TERMINAL METALÚRGICOS</name>
+      <address>Avenida dos Metalúrgicos, Cidade Tiradentes, São Paulo, SP</address>
+      <description><![CDATA[Nº: 35<br>Endereço: Avenida dos Metalúrgicos, Cidade Tiradentes, São Paulo, SP<br>Distrito: Cidade Tiradentes<br>Subprefeitura: Cidade Tiradentes<br>Zona: Leste<br>Data  Instalação: 9/17/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 8.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>35.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida dos Metalúrgicos, Cidade Tiradentes, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cidade Tiradentes</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Cidade Tiradentes</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/17/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA FELISBERTO FERNANDES DA SILVA - LARGO SÃO MATEUS</name>
+      <address>Rua Manuel André, 88, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 53<br>Endereço: Rua Manuel André, 88, São Paulo, SP, Brasil<br>Distrito: São Mateus<br>Subprefeitura: São Mateus<br>Zona: Leste<br>Data  Instalação: 10/27/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 12.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>53.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Manuel André, 88, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>São Mateus</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Mateus</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/27/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>12.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA FORTUNATO DA SILVEIRA - UNISUL</name>
+      <address>Rua Vilma, 222, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 57<br>Endereço: Rua Vilma, 222, São Paulo, SP, Brasil<br>Distrito: Vila Jacuí<br>Subprefeitura: São Miguel<br>Zona: Leste<br>Data  Instalação: 2/9/2015<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 14.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>57.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Vilma, 222, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Jacuí</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Miguel</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>2/9/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>14.500 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA GENERAL HUMBERTO DE SOUZA MELO</name>
+      <address>Rua Catumbi, 190, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 26<br>Endereço: Rua Catumbi, 190, São Paulo, SP, Brasil<br>Distrito: Belém<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/27/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 7.210 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>26.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Catumbi, 190, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Belém</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/27/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>7.210 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA GIOVANI FIANI</name>
+      <address>Praça Giovani Fiani, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 37<br>Endereço: Praça Giovani Fiani, São Paulo, SP, Brasil<br>Distrito: Ponte Rasa<br>Subprefeitura: Ermelino Matarazzo<br>Zona: Leste<br>Data  Instalação: 9/25/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 1.705 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>37.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Giovani Fiani, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Ponte Rasa</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ermelino Matarazzo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/25/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.705 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JAGUAMITANGA</name>
+      <address>Rua Guaxima, 163, Vila Curuçá, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 41<br>Endereço: Rua Guaxima, 163, Vila Curuçá, São Paulo, SP, Brasil<br>Distrito: Vila Curuçá<br>Subprefeitura: Itaim Paulista<br>Zona: Leste<br>Data  Instalação: 10/8/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 13.350 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>41.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Guaxima, 163, Vila Curuçá, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Curuçá</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaim Paulista</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>13.350 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JESUS TEIXEIRA DA COSTA</name>
+      <address>Rua Caranaíba, 148, Guaianases, Brasil, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 38<br>Endereço: Rua Caranaíba, 148, Guaianases, Brasil, São Paulo, SP, Brasil<br>Distrito: Guaianases<br>Subprefeitura: Guaianases<br>Zona: Leste<br>Data  Instalação: 10/1/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 1.270 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>38.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Caranaíba, 148, Guaianases, Brasil, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Guaianases</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Guaianases</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/1/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.270 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA KANTUTA</name>
+      <address>Rua Carnot, 841, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 29<br>Endereço: Rua Carnot, 841, São Paulo, SP, Brasil<br>Distrito: Pari<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/29/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 4.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>29.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Carnot, 841, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Pari</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA NA RUA GREGÓRIO RAMALHO</name>
+      <description><![CDATA[Nº: 44<br>Endereço: Rua Gregório Ramalho, 239, São Paulo, SP, Brasil<br>Distrito: Itaquera<br>Subprefeitura: Itaquera<br>Zona: Leste<br>Data  Instalação: 10/13/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 8.400 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>44.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Gregório Ramalho, 239, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Itaquera</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaquera</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/13/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.400 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.4553164,-23.5374813,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA OSLEI FRANCISCO BORGES</name>
+      <address>Rua Tauro, 58, Recanto Verde do Sol, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 52<br>Endereço: Rua Tauro, 58, Recanto Verde do Sol, São Paulo, SP, Brasil<br>Distrito: Iguatemi<br>Subprefeitura: São Mateus<br>Zona: Leste<br>Data  Instalação: 10/27/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 3.375 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>52.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Tauro, 58, Recanto Verde do Sol, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Iguatemi</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Mateus</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/27/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.375 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA OSVALDO LUÍS DA SILVEIRA</name>
+      <address>Rua Ponte do Guaré, 88, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 54<br>Endereço: Rua Ponte do Guaré, 88, São Paulo, SP, Brasil<br>Distrito: São Rafael<br>Subprefeitura: São Mateus<br>Zona: Leste<br>Data  Instalação: 10/29/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 11.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>54.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Ponte do Guaré, 88, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>São Rafael</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Mateus</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>11.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA PADRE ALEIXO (DO FORRÓ)</name>
+      <address>Praça Padre Aleixo Monteiro Mafra, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 56<br>Endereço: Praça Padre Aleixo Monteiro Mafra, São Paulo, SP, Brasil<br>Distrito: São Miguel<br>Subprefeitura: São Miguel<br>Zona: Leste<br>Data  Instalação: 11/4/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 17.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>56.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Padre Aleixo Monteiro Mafra, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>São Miguel</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>São Miguel</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/4/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>17.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA PADRE DAMIÃO</name>
+      <address>Praça Padre Damião, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 58<br>Endereço: Praça Padre Damião, São Paulo, SP, Brasil<br>Distrito: São Lucas<br>Subprefeitura: Vila Prudente<br>Zona: Leste<br>Data  Instalação: 11/11/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 1.400 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>58.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Padre Damião, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>São Lucas</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Prudente</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/11/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.400 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA PROFESSORAS </name>
+      <address>Avenida das Alamandas, 12, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 43<br>Endereço: Avenida das Alamandas, 12, São Paulo, SP, Brasil<br>Distrito: Cidade Líder<br>Subprefeitura: Itaquera<br>Zona: Leste<br>Data  Instalação: 10/8/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 1.550 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>43.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida das Alamandas, 12, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cidade Líder</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Itaquera</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.550 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA SAMPAIO VIDAL</name>
+      <address>Avenida Doutor Eduardo Cotching, 2294, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 33<br>Endereço: Avenida Doutor Eduardo Cotching, 2294, São Paulo, SP, Brasil<br>Distrito: Vila Formosa<br>Subprefeitura: Aricanduva/Formosa/Carrão<br>Zona: Leste<br>Data  Instalação: 9/9/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 19.350 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>33.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida Doutor Eduardo Cotching, 2294, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Formosa</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Aricanduva/Formosa/Carrão</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/9/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>19.350 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA SÃO JOÃO VICENZOTTO</name>
+      <address>Avenida Rio das Pedras, 1078, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 25<br>Endereço: Avenida Rio das Pedras, 1078, São Paulo, SP, Brasil<br>Distrito: Aricanduva<br>Subprefeitura: Aricanduva/Formosa/Carrão<br>Zona: Leste<br>Data  Instalação: 9/3/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 4.070 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>25.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida Rio das Pedras, 1078, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Aricanduva</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Aricanduva/Formosa/Carrão</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.070 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA SÃO LUIS DO CURU</name>
+      <description><![CDATA[Nº: 30<br>Endereço: Rua Capitão Lorena, 84, São Paulo, SP, Brasil<br>Distrito: Água Rasa<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/19/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 4.900 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>30.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Capitão Lorena, 84, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Água Rasa</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/19/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.900 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.567058,-23.5690801,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA SILVIO ROMERO</name>
+      <address>Praça Silvio Romero, 29, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 31<br>Endereço: Praça Silvio Romero, 29, São Paulo, SP, Brasil<br>Distrito: Tatuapé<br>Subprefeitura: Mooca<br>Zona: Leste<br>Data  Instalação: 8/29/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 18.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>31.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Silvio Romero, 29, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Tatuapé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Mooca</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>18.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA TORQUATO PLAZA</name>
+      <address>praça Torquato Plaza, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 60<br>Endereço: praça Torquato Plaza, São Paulo, SP, Brasil<br>Distrito: Sapopemba<br>Subprefeitura: Sapopemba<br>Zona: Leste<br>Data  Instalação: 11/18/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 2.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>60.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>praça Torquato Plaza, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sapopemba</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Sapopemba</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/18/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA VICENTE FALCETTA</name>
+      <address>Praça Vicente Falsetta, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 32<br>Endereço: Praça Vicente Falsetta, São Paulo, SP, Brasil<br>Distrito: Carrão<br>Subprefeitura: Aricanduva/Formosa/Carrão<br>Zona: Leste<br>Data  Instalação: 9/8/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 4.070 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>32.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Vicente Falsetta, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Carrão</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Aricanduva/Formosa/Carrão</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.070 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DA MATRIZ</name>
+      <description><![CDATA[Nº: 65<br>Endereço: Largo da Matriz de Nossa Senhora do Ó, 177, São Paulo, SP, Brasil<br>Distrito: Freguesia do Ó<br>Subprefeitura: Freguesia/ Brasilândia<br>Zona: Norte<br>Data  Instalação: 12/8/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 6.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>65.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo da Matriz de Nossa Senhora do Ó, 177, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Freguesia do Ó</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Freguesia/ Brasilândia</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>6.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6985452,-23.50158,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DO JAPONÊS</name>
+      <address>Largo do Japonês, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 61<br>Endereço: Largo do Japonês, São Paulo, SP, Brasil<br>Distrito: Cachoeirinha<br>Subprefeitura: Casa Verde/ Cachoeirinha<br>Zona: Norte<br>Data  Instalação: 11/18/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 1.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>61.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo do Japonês, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cachoeirinha</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Casa Verde/ Cachoeirinha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/18/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.500 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DOMINGO LUÍS</name>
+      <address>Parque Domingo Luís, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 74<br>Endereço: Parque Domingo Luís, São Paulo, SP, Brasil<br>Distrito: Santana<br>Subprefeitura: Santana/ Tucuruvi<br>Zona: Norte<br>Data  Instalação: 7/3/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 73.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>74.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Parque Domingo Luís, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Santana</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santana/ Tucuruvi</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>73.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>CLUBE ESPORTIVO E DE LAZER TIETÊ</name>
+      <description><![CDATA[Nº: 121<br>Endereço: Rua Guirá Acangatara, 70, Engenheiro Goulart, São Paulo, SP, Brasil<br>Distrito: Cangaíba<br>Subprefeitura: Penha<br>Zona: Leste<br>Data  Instalação: 2/26/2015<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 15.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>121.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Guirá Acangatara, 70, Engenheiro Goulart, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cangaíba</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Penha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Leste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>2/26/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>15.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.5257411,-23.4950865,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA 14º PARADA</name>
+      <address>Praça Vila Esperança, 12 - Conj. Hab. Turistica</address>
+      <description><![CDATA[Nº: 72<br>Endereço: Praça Vila Esperança, 12 - Conj. Hab. Turistica<br>Distrito: São Domingos<br>Subprefeitura: Pirituba<br>Zona: Norte<br>Data  Instalação: 12/15/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 5.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>72.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Vila Esperança, 12 - Conj. Hab. Turistica</value>
+        </Data>
+        <Data name="Distrito">
+          <value>São Domingos</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pirituba</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/15/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DA CULTURA</name>
+      <description><![CDATA[Nº: 68<br>Endereço: Praça da Cultura, Perus, São Paulo, SP<br>Distrito: Anhanguera<br>Subprefeitura: Perus<br>Zona: Norte<br>Data  Instalação: 12/8/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 22.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>68.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça da Cultura, Perus, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Anhanguera</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Perus</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>22.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.7937497,-23.432783,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA NA RUA DAS IMBIRAIARAS ALT. Nº 400</name>
+      <address>Rua Ibiraiaras, 400, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 64<br>Endereço: Rua Ibiraiaras, 400, São Paulo, SP, Brasil<br>Distrito: Brasilândia<br>Subprefeitura: Freguesia/ Brasilândia<br>Zona: Norte<br>Data  Instalação: 12/2/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 4.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>64.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Ibiraiaras, 400, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Brasilândia</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Freguesia/ Brasilândia</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/2/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.500 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DAS MONÇÕES - TERMINAL CASA VERDE</name>
+      <address>Av. Eng. Caetano Álvares, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 62<br>Endereço: Av. Eng. Caetano Álvares, São Paulo, SP, Brasil<br>Distrito: Casa Verde<br>Subprefeitura: Casa Verde/ Cachoeirinha<br>Zona: Norte<br>Data  Instalação: 12/1/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 1.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>62.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Eng. Caetano Álvares, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Casa Verde</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Casa Verde/ Cachoeirinha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/1/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.300 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DOUTOR JOÃO BATISTA VASQUES</name>
+      <address>Rua Benjamin Pereira, 762, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 66<br>Endereço: Rua Benjamin Pereira, 762, São Paulo, SP, Brasil<br>Distrito: Jaçanã<br>Subprefeitura: Jaçanã/ Tremembé<br>Zona: Norte<br>Data  Instalação: 12/8/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 6.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>66.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Benjamin Pereira, 762, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jaçanã</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Jaçanã/ Tremembé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>6.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JOÃO BOLDO</name>
+      <address>Rua Comendador Feiz Zarzur, 146, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 71<br>Endereço: Rua Comendador Feiz Zarzur, 146, São Paulo, SP, Brasil<br>Distrito: Pirituba<br>Subprefeitura: Pirituba<br>Zona: Norte<br>Data  Instalação: 1/29/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 8.150 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>71.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Comendador Feiz Zarzur, 146, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Pirituba</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pirituba</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>1/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.150 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA LOURENÇO DE BELLIS</name>
+      <address>Av. João Simão de Castro, 252, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 78<br>Endereço: Av. João Simão de Castro, 252, São Paulo, SP, Brasil<br>Distrito: Vila Medeiros<br>Subprefeitura: Vila Maria/ Vila Guilherme<br>Zona: Norte<br>Data  Instalação: 2/24/2015<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 2.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>78.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. João Simão de Castro, 252, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Medeiros</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Maria/ Vila Guilherme</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>2/24/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.300 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA MARCO ANTÔNIO PRIMON MAESTRE</name>
+      <address>Praça Marco Antônio Primon Maestre, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 63<br>Endereço: Praça Marco Antônio Primon Maestre, São Paulo, SP, Brasil<br>Distrito: Limão<br>Subprefeitura: Casa Verde/ Cachoeirinha<br>Zona: Norte<br>Data  Instalação: 12/2/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 800 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>63.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Marco Antônio Primon Maestre, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Limão</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Casa Verde/ Cachoeirinha</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/2/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>800 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA MARIQUINHA SCIASCIA</name>
+      <address>Praça Dona Mariquinha Sciascia, Tremembé, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 67<br>Endereço: Praça Dona Mariquinha Sciascia, Tremembé, São Paulo, SP, Brasil<br>Distrito: Tremembé<br>Subprefeitura: Jaçanã/ Tremembé<br>Zona: Norte<br>Data  Instalação: 12/8/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 1.275 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>67.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Dona Mariquinha Sciascia, Tremembé, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Tremembé</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Jaçanã/ Tremembé</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.275 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA NOSSA SENHORA DOS PRAZERES</name>
+      <address>Praça Nossa Senhora dos Prazeres, Vila Dom Pedro II, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 75<br>Endereço: Praça Nossa Senhora dos Prazeres, Vila Dom Pedro II, São Paulo, SP, Brasil<br>Distrito: Tucuruvi<br>Subprefeitura: Santana/ Tucuruvi<br>Zona: Norte<br>Data  Instalação: 6/26/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 8.600 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>75.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Nossa Senhora dos Prazeres, Vila Dom Pedro II, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Tucuruvi</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santana/ Tucuruvi</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.600 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA NOVO MUNDO</name>
+      <address>Praça Novo Mundo, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 77<br>Endereço: Praça Novo Mundo, São Paulo, SP, Brasil <br>Distrito: Vila Maria<br>Subprefeitura: Vila Maria/ Vila Guilherme<br>Zona: Norte<br>Data  Instalação: 3/2/2015<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 13.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>77.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Novo Mundo, São Paulo, SP, Brasil </value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Maria</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Maria/ Vila Guilherme</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/2/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>13.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA OSCAR DA SILVA</name>
+      <address>Praça Oscar da Silva, Vila Guilherme, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 76<br>Endereço: Praça Oscar da Silva, Vila Guilherme, São Paulo, SP, Brasil<br>Distrito: Vila Guilherme<br>Subprefeitura: Vila Maria/ Vila Guilherme<br>Zona: Norte<br>Data  Instalação: 6/26/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 4.100 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>76.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Oscar da Silva, Vila Guilherme, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Guilherme</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Maria/ Vila Guilherme</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>4.100 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA VEREADOR ANTONIO SAMPAIO</name>
+      <address>Avenida Ultramarino, 262, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 73<br>Endereço: Avenida Ultramarino, 262, São Paulo, SP, Brasil<br>Distrito: Mandaqui<br>Subprefeitura: Santana/ Tucuruvi<br>Zona: Norte<br>Data  Instalação: 8/19/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 9.600 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>73.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Avenida Ultramarino, 262, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Mandaqui</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santana/ Tucuruvi</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/19/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>9.600 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA VIGÁRIO JOÃO G. DE LIMA - PRAÇA DO SAMBA</name>
+      <address>Praça Vigário João Gonçalves de Lima, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 69<br>Endereço: Praça Vigário João Gonçalves de Lima, São Paulo, SP, Brasil<br>Distrito: Perus<br>Subprefeitura: Perus<br>Zona: Norte<br>Data  Instalação: 12/12/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 16.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>69.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Vigário João Gonçalves de Lima, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Perus</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Perus</value>
+        </Data>
+        <Data name="Zona">
+          <value>Norte</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/12/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>16.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DA BATATA</name>
+      <address>Largo da Batata, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 93<br>Endereço: Largo da Batata, São Paulo, SP, Brasil<br>Distrito: Pinheiros<br>Subprefeitura: Pinheiros<br>Zona: Oeste<br>Data  Instalação: 2/4/2015<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 20.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>93.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo da Batata, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Pinheiros</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pinheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>2/4/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>20.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE ALFREDO VOLPI</name>
+      <address>Av. Eng. Oscar Americano, 480, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 86<br>Endereço: Av. Eng. Oscar Americano, 480, São Paulo, SP, Brasil<br>Distrito: Morumbi<br>Subprefeitura: Butantã<br>Zona: Oeste<br>Data  Instalação: 6/30/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 171.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>86.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Eng. Oscar Americano, 480, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Morumbi</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/30/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>171.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE ORLANDO VILLA BÔAS</name>
+      <address>Av. Embaixador Macedo Soares, 6715, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 84<br>Endereço: Av. Embaixador Macedo Soares, 6715, São Paulo, SP, Brasil<br>Distrito: Vila Leopoldina<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 6/11/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 205.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>84.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Embaixador Macedo Soares, 6715, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Leopoldina</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/11/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>205.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE RAPOSO TAVARES</name>
+      <address>Parque Raposo Tavares, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 87<br>Endereço: Parque Raposo Tavares, São Paulo, SP, Brasil<br>Distrito: Raposo Tavares<br>Subprefeitura: Butantã<br>Zona: Oeste<br>Data  Instalação: 12/16/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 246.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>87.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Parque Raposo Tavares, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Raposo Tavares</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/16/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>246.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ARLINDO ROSSI</name>
+      <address>R. Araçaíba, 38, Brooklin, Itaim Bibi, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 91<br>Endereço: R. Araçaíba, 38, Brooklin, Itaim Bibi, São Paulo, SP, Brasil<br>Distrito: Itaim Bibi<br>Subprefeitura: Pinheiros<br>Zona: Oeste<br>Data  Instalação: 7/10/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 11.050 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>91.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>R. Araçaíba, 38, Brooklin, Itaim Bibi, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Itaim Bibi</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pinheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>11.050 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA BENEDITO CALIXTO</name>
+      <address>Praça Benedito Calixto, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 92<br>Endereço: Praça Benedito Calixto, São Paulo, SP, Brasil<br>Distrito: Jardim Paulista<br>Subprefeitura: Pinheiros<br>Zona: Oeste<br>Data  Instalação: 4/25/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 15.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>92.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Benedito Calixto, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jardim Paulista</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pinheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>4/25/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>15.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA CONDE FRANCISCO MATARAZZO</name>
+      <address>Praça Conde Francisco Matarazzo Junior, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 79<br>Endereço: Praça Conde Francisco Matarazzo Junior, São Paulo, SP, Brasil<br>Distrito: Barra Funda<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 9/3/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 7.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>79.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Conde Francisco Matarazzo Junior, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Barra Funda</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>7.300 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA CORNÉLIA</name>
+      <address>R. Crasso, 289, Lapa São Paulo, 05043-010, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 82<br>Endereço: R. Crasso, 289, Lapa São Paulo, 05043-010, São Paulo, SP, Brasil<br>Distrito: Lapa<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 10/1/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 6.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>82.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>R. Crasso, 289, Lapa São Paulo, 05043-010, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/1/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>6.200 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ELIS REGINA</name>
+      <address>Praça Elis Regina, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 85<br>Endereço: Praça Elis Regina, São Paulo, SP, Brasil<br>Distrito: Butantã<br>Subprefeitura: Butantã<br>Zona: Oeste<br>Data  Instalação: 7/16/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 8.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>85.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Elis Regina, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>7/16/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ENG. NORIWUKI YAMAMOTO</name>
+      <address>Praça Eng Noriwuki Yamamoto, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 89<br>Endereço: Praça Eng Noriwuki Yamamoto, São Paulo, SP, Brasil<br>Distrito: Vila Sônia<br>Subprefeitura: Butantã<br>Zona: Oeste<br>Data  Instalação: 11/5/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 6.900 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>89.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Eng Noriwuki Yamamoto, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Sônia</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/5/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>6.900 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA GEN. PORTO CARREIRO</name>
+      <address>Praça General Porto Carreiro, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 81<br>Endereço: Praça General Porto Carreiro, São Paulo, SP, Brasil<br>Distrito: Jaguaré<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 8/4/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 11.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>81.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça General Porto Carreiro, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jaguaré</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/4/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>11.200 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA GENERAL GUIMARÃES</name>
+      <address>Praça General Guimarães, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 80<br>Endereço: Praça General Guimarães, São Paulo, SP, Brasil<br>Distrito: Jaguara<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 8/22/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 1.450 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>80.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça General Guimarães, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jaguara</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/22/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1.450 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO PÔR-DO-SOL</name>
+      <address>Av. Diógenes Ribeiro de Lima, 110, Alto de Pinheiros, 05458-000, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 90<br>Endereço: Av. Diógenes Ribeiro de Lima, 110, Alto de Pinheiros, 05458-000, São Paulo, SP, Brasil<br>Distrito: Alto de Pinheiros<br>Subprefeitura: Pinheiros<br>Zona: Oeste<br>Data  Instalação: 11/19/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 50.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>90.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Diógenes Ribeiro de Lima, 110, Alto de Pinheiros, 05458-000, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Alto de Pinheiros</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Pinheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/19/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>50.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA WILSON MOREIRA DA COSTA</name>
+      <address>R. Mílton Soares, 66, Rio Pequeno,05382-010</address>
+      <description><![CDATA[Nº: 88<br>Endereço: R. Mílton Soares, 66, Rio Pequeno,05382-010<br>Distrito: Rio Pequeno<br>Subprefeitura: Butantã<br>Zona: Oeste<br>Data  Instalação: 12/16/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 9.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>88.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>R. Mílton Soares, 66, Rio Pequeno,05382-010</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Rio Pequeno</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Butantã</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/16/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>9.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ZILDA NATEL</name>
+      <address>Av. Dr. Arnaldo, 1250, Perdizes, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 83<br>Endereço: Av. Dr. Arnaldo, 1250, Perdizes, São Paulo, SP, Brasil<br>Distrito: Perdizes<br>Subprefeitura: Lapa<br>Zona: Oeste<br>Data  Instalação: 6/10/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 2.386 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>83.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Dr. Arnaldo, 1250, Perdizes, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Perdizes</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Lapa</value>
+        </Data>
+        <Data name="Zona">
+          <value>Oeste</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.386 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>ALDEIA TENONDE-PORÃ</name>
+      <description><![CDATA[Nº: 115<br>Endereço: Estrada João Lang, São Paulo, SP, Brasil<br>Distrito: Parelheiros<br>Subprefeitura: Parelheiros<br>Zona: Sul<br>Data  Instalação: 3/9/2015<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 46.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>115.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Estrada João Lang, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Parelheiros</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Parelheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/9/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>46.000 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6521498,-23.8680639,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>CALÇADÃO CULTURAL DO GRAJAÚ</name>
+      <address>Rua Professor Oscar Barreto Filho, 252</address>
+      <description><![CDATA[Nº: 102<br>Endereço: Rua Professor Oscar Barreto Filho, 252<br>Distrito: Grajaú<br>Subprefeitura: Capela do Socorro<br>Zona: Sul<br>Data  Instalação: 11/4/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 14.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>102.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Professor Oscar Barreto Filho, 252</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Grajaú</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Capela do Socorro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/4/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>14.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>CAMPO DO PALMEIRINHA - PARAISÓPOLIS</name>
+      <address>R. Melchior Giola, 157, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 100<br>Endereço: R. Melchior Giola, 157, São Paulo, SP, Brasil<br>Distrito: Vila Andrade<br>Subprefeitura: Campo Limpo<br>Zona: Sul<br>Data  Instalação: 3/2/2015<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 5.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>100.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>R. Melchior Giola, 157, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Andrade</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/2/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.200 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>CDC CAMPO BELO</name>
+      <address>Rua Sapoti, 20, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 118<br>Endereço: Rua Sapoti, 20, São Paulo, SP, Brasil<br>Distrito: Campo Belo<br>Subprefeitura: Santo Amaro<br>Zona: Sul<br>Data  Instalação: 9/17/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 15.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>118.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Sapoti, 20, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Campo Belo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santo Amaro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/17/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>15.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>CENTRO DE CONVIVÊNCIA EDUCATIVO E CULTURAL DE HELIÓPOLIS</name>
+      <description><![CDATA[Nº: 108<br>Endereço: Rua São Damásio, 2385, São Paulo, SP, Brasil<br>Distrito: Sacomã<br>Subprefeitura: Ipiranga<br>Zona: Sul<br>Data  Instalação: 3/9/2015<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 46.250 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>108.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua São Damásio, 2385, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sacomã</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ipiranga</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/9/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>46.250 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.5915797,-23.6225578,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DE MOEMA</name>
+      <description><![CDATA[Nº: 94<br>Endereço: Praça Nossa Senhora Aparecida<br>Indianópolis, São Paulo, SP<br>Distrito: Moema<br>Subprefeitura: Vila Mariana<br>Zona: Sul<br>Data  Instalação: 5/26/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 11.200 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>94.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Nossa Senhora Aparecida
+Indianópolis, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Moema</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Mariana</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/26/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>11.200 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6609687,-23.6034449,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO DONA ANA ROSA</name>
+      <description><![CDATA[Nº: 96<br>Endereço: Largo Dona Ana Rosa - Vila Mariana<br>Distrito: Vila Mariana<br>Subprefeitura: Vila Mariana<br>Zona: Sul<br>Data  Instalação: 9/17/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 3.040 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>96.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo Dona Ana Rosa - Vila Mariana</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Vila Mariana</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Mariana</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/17/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.040 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6390324,-23.5811191,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>LARGO SANTA ANGELA</name>
+      <description><![CDATA[Nº: 107<br>Endereço: Largo Santa Ângela - Vila Moraes<br>Distrito: Cursino<br>Subprefeitura: Ipiranga<br>Zona: Sul<br>Data  Instalação: 12/8/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 2.800 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>107.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Largo Santa Ângela - Vila Moraes</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cursino</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ipiranga</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.800 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6138194,-23.6337457,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DA INDEPENDÊNCIA</name>
+      <address>Av. Nazaré, 239 - Ipiranga, São Paulo, SP</address>
+      <description><![CDATA[Nº: 24<br>Endereço: Av. Nazaré, 239 - Ipiranga, São Paulo, SP<br>Distrito: Ipiranga<br>Subprefeitura: Ipiranga<br>Zona: Sul<br>Data  Instalação: 8/18/2014<br>Capacidade de Usuários: 250*<br>ÁREA (m²): 275.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>24.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Nazaré, 239 - Ipiranga, São Paulo, SP</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Ipiranga</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ipiranga</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/18/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>250*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>275.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE DO NABUCO</name>
+      <address>Parque do Nabuco, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 111<br>Endereço: Parque do Nabuco, São Paulo, SP, Brasil<br>Distrito: Jabaquara<br>Subprefeitura: Jabaquara<br>Zona: Sul<br>Data  Instalação: 5/21/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 34.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>111.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Parque do Nabuco, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jabaquara</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Jabaquara</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/21/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>34.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PARQUE SANTO DIAS</name>
+      <address>Rua Arroio das Caneleiras, s/n, Conjunto Habitacional Instituto Adventista</address>
+      <description><![CDATA[Nº: 99<br>Endereço: Rua Arroio das Caneleiras, s/n, Conjunto Habitacional Instituto Adventista<br>Distrito: Capão Redondo<br>Subprefeitura: Campo Limpo<br>Zona: Sul<br>Data  Instalação: 6/10/2014<br>Capacidade de Usuários: 125*<br>ÁREA (m²): 157.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>99.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Arroio das Caneleiras, s/n, Conjunto Habitacional Instituto Adventista</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Capão Redondo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>6/10/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>125*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>157.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name><![CDATA[POLO CULTURAL DO JARDIM ÂNGELA - AV M' BOI MIRIM C/ RUA PRAIA DA DONTE]]></name>
+      <address>Praça Manoel Lopes, Jardim Sônia Regina, 04905-010</address>
+      <description><![CDATA[Nº: 112<br>Endereço: Praça Manoel Lopes, Jardim Sônia Regina, 04905-010<br>Distrito: Jardim Ângela<br>Subprefeitura: M’boi Mirim<br>Zona: Sul<br>Data  Instalação: 11/11/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 3.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>112.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Manoel Lopes, Jardim Sônia Regina, 04905-010</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jardim Ângela</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>M’boi Mirim</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/11/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ALEXANDRE FRANCISCO REBOUÇAS</name>
+      <address>Praça Alexandre Francisco Rebouças, Jardim Pedreira, São Paulo, Brasil</address>
+      <description><![CDATA[Nº: 106<br>Endereço: Praça Alexandre Francisco Rebouças, Jardim Pedreira, São Paulo, Brasil<br>Distrito: Pedreira<br>Subprefeitura: Cidade Ademar<br>Zona: Sul<br>Data  Instalação: 12/16/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 2.700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>106.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Alexandre Francisco Rebouças, Jardim Pedreira, São Paulo, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Pedreira</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Cidade Ademar</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/16/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ALFREDO EGYDIO DE SOUZA ARANHA</name>
+      <description><![CDATA[Nº: 110<br>Endereço: Praça Alfredo Egydio de Souza Aranha, São Paulo, SP, Brasil<br>Distrito: Jabaquara<br>Subprefeitura: Jabaquara<br>Zona: Sul<br>Data  Instalação: 5/29/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 37.500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>110.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Alfredo Egydio de Souza Aranha, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jabaquara</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Jabaquara</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/29/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>37.500 </value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -46.6419116,-23.6352684,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA BACHAREL FERNANDO BRAGA PEREIRA DA ROCHA</name>
+      <address>Av. Cupecê, 5400 - Jardim Miriam,São Paulo - SP,04366-001</address>
+      <description><![CDATA[Nº: 105<br>Endereço: Av. Cupecê, 5400 - Jardim Miriam,São Paulo - SP,04366-001<br>Distrito: Cidade Ademar<br>Subprefeitura: Cidade Ademar<br>Zona: Sul<br>Data  Instalação: 9/9/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 2.030 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>105.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Cupecê, 5400 - Jardim Miriam,São Paulo - SP,04366-001</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cidade Ademar</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Cidade Ademar</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/9/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.030 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DIRCEU DE CASTRO FONTOURA</name>
+      <address>Rua Amadeu Giusti, 203-251, Sacomã, 04182-080, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 109<br>Endereço: Rua Amadeu Giusti, 203-251, Sacomã, 04182-080, São Paulo, SP, Brasil<br>Distrito: Sacomã<br>Subprefeitura: Ipiranga<br>Zona: Sul<br>Data  Instalação: 11/7/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 21.250 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>109.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Amadeu Giusti, 203-251, Sacomã, 04182-080, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Sacomã</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Ipiranga</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/7/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>21.250 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO LARGO DE PIRAPORINHA</name>
+      <address><![CDATA[Estrada M'Boi Mirim, 1.000, São Paulo, SP, Brasil]]></address>
+      <description><![CDATA[Nº: 113<br>Endereço: Estrada M'Boi Mirim, 1.000, São Paulo, SP, Brasil<br>Distrito: Jardim Ângela<br>Subprefeitura: M’boi Mirim<br>Zona: Sul<br>Data  Instalação: 9/8/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 2.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>113.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value><![CDATA[Estrada M'Boi Mirim, 1.000, São Paulo, SP, Brasil]]></value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jardim Ângela</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>M’boi Mirim</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/8/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA ESCOLAR</name>
+      <address>Praça Escolar, Cidade Dutra, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 101<br>Endereço: Praça Escolar, Cidade Dutra, São Paulo, SP, Brasil<br>Distrito: Cidade Dutra<br>Subprefeitura: Capela do Socorro<br>Zona: Sul<br>Data  Instalação: 8/28/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 2.800 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>101.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Escolar, Cidade Dutra, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Cidade Dutra</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Capela do Socorro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>8/28/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>2.800 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA DO FEIRÃO SÃO LUIS</name>
+      <address>Rua Arraial dos Couros, 14, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 114<br>Endereço: Rua Arraial dos Couros, 14, São Paulo, SP, Brasil<br>Distrito: Jardim São Luís<br>Subprefeitura: M’boi Mirim<br>Zona: Sul<br>Data  Instalação: 11/3/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 3.300 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>114.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Rua Arraial dos Couros, 14, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Jardim São Luís</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>M’boi Mirim</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>3.300 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA FLORIANO PEIXOTO</name>
+      <address>Praça Floriano Peixoto, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 120<br>Endereço: Praça Floriano Peixoto, São Paulo, SP, Brasil<br>Distrito: Santo Amaro<br>Subprefeitura: Santo Amaro<br>Zona: Sul<br>Data  Instalação: 5/9/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 5.000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>120.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Floriano Peixoto, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Santo Amaro</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santo Amaro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/9/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JOÃO ADÃO E PRAÇA JACÓ REIMBERG FILHO</name>
+      <address>Praça Jacobe Reimberg Filho, 1 - Marsilac</address>
+      <description><![CDATA[Nº: 117<br>Endereço: Praça Jacobe Reimberg Filho, 1 - Marsilac <br>Distrito: Marsilac<br>Subprefeitura: Parelheiros<br>Zona: Sul<br>Data  Instalação: 3/27/2015<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 5.100 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>117.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Jacobe Reimberg Filho, 1 - Marsilac </value>
+        </Data>
+        <Data name="Distrito">
+          <value>Marsilac</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Parelheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>3/27/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5.100 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JOÃO BEIÇOLA</name>
+      <address>Av. Lourenço Cabreira, 154, Cidade Dutra, 04812-010, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 103<br>Endereço: Av. Lourenço Cabreira, 154, Cidade Dutra, 04812-010, São Paulo, SP, Brasil<br>Distrito: Grajaú<br>Subprefeitura: Capela do Socorro<br>Zona: Sul<br>Data  Instalação: 10/27/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 5,700 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>103.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Lourenço Cabreira, 154, Cidade Dutra, 04812-010, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Grajaú</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Capela do Socorro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>10/27/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5,700 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JOÃO TADEU PRIOLLI - PRAÇA DO CAMPO LIMPO</name>
+      <address>Praça João Tadeu Priolli, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 98<br>Endereço: Praça João Tadeu Priolli, São Paulo, SP, Brasil<br>Distrito: Campo Limpo<br>Subprefeitura: Campo Limpo<br>Zona: Sul<br>Data  Instalação: 5/15/2014<br>Capacidade de Usuários: 150*<br>ÁREA (m²): 60,000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>98.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça João Tadeu Priolli, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>5/15/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>150*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>60,000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA JÚLIO CÉSAR DE CAMPOS</name>
+      <address>Praça Júlio César De Campos, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 116<br>Endereço: Praça Júlio César De Campos, São Paulo, SP, Brasil<br>Distrito: Parelheiros<br>Subprefeitura: Parelheiros<br>Zona: Sul<br>Data  Instalação: 4/14/2015<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 1,250 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>116.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Júlio César De Campos, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Parelheiros</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Parelheiros</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>4/14/2015</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>1,250 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA LUISA P DOS SANTOS - PRAÇA ARARIBA</name>
+      <address>Praça Luisa Pêra dos Santos, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 97<br>Endereço: Praça Luisa Pêra dos Santos, São Paulo, SP, Brasil<br>Distrito: Campo Limpo<br>Subprefeitura: Campo Limpo<br>Zona: Sul<br>Data  Instalação: 12/12/2014<br>Capacidade de Usuários: 100*<br>ÁREA (m²): 5,500 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>97.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Luisa Pêra dos Santos, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Campo Limpo</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>12/12/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>100*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>5,500 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA SANTA RITA DE CÁSSIA</name>
+      <address>Praça Santa Rita de Cássia, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 95<br>Endereço: Praça Santa Rita de Cássia, São Paulo, SP, Brasil<br>Distrito: Saúde<br>Subprefeitura: Vila Mariana<br>Zona: Sul<br>Data  Instalação: 11/3/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 8,000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>95.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Santa Rita de Cássia, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Saúde</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Vila Mariana</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/3/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>8,000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAÇA TUNEY ARANTES</name>
+      <address>Praça Tuney Arantes, Jardim Anhanguera, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 119<br>Endereço: Praça Tuney Arantes, Jardim Anhanguera, São Paulo, SP, Brasil<br>Distrito: Campo Grande<br>Subprefeitura: Santo Amaro<br>Zona: Sul<br>Data  Instalação: 9/25/2014<br>Capacidade de Usuários: 50*<br>ÁREA (m²): 10,000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>119.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Praça Tuney Arantes, Jardim Anhanguera, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Campo Grande</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Santo Amaro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>9/25/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>50*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>10,000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+    <Placemark>
+      <name>PRAIA DO SOL</name>
+      <address>Av. Atlântica, 3456, São Paulo, SP, Brasil</address>
+      <description><![CDATA[Nº: 104<br>Endereço: Av. Atlântica, 3456, São Paulo, SP, Brasil<br>Distrito: Socorro<br>Subprefeitura: Capela do Socorro<br>Zona: Sul<br>Data  Instalação: 11/13/2014<br>Capacidade de Usuários: 75*<br>ÁREA (m²): 12,000 ]]></description>
+      <styleUrl>#icon-1345-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Nº">
+          <value>104.0</value>
+        </Data>
+        <Data name="Endereço">
+          <value>Av. Atlântica, 3456, São Paulo, SP, Brasil</value>
+        </Data>
+        <Data name="Distrito">
+          <value>Socorro</value>
+        </Data>
+        <Data name="Subprefeitura">
+          <value>Capela do Socorro</value>
+        </Data>
+        <Data name="Zona">
+          <value>Sul</value>
+        </Data>
+        <Data name="Data  Instalação">
+          <value>11/13/2014</value>
+        </Data>
+        <Data name="Capacidade de Usuários">
+          <value>75*</value>
+        </Data>
+        <Data name="ÁREA (m²)">
+          <value>12,000 </value>
+        </Data>
+      </ExtendedData>
+    </Placemark>
+  </Document>
+</kml>
