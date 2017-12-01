@@ -18,7 +18,8 @@ class News < ApplicationRecord
           Title => News' title,
           Author => News' Author,
           Content => New' content,
-          Image => News' image
+          Image => News' image,
+          URL => News' url
         }
       },
     ]
@@ -53,6 +54,7 @@ class News < ApplicationRecord
         content: entry['post_content'],
         author: entry['post_author'],
         image: entry['post_image_full'],
+        url: entry['post_site_referrer']['siteurl'],
         timestamp: DateTime.now.to_s
       }
     ]

@@ -40,7 +40,8 @@ class CatracalivreGathererWorker
             title: post['post_title'],
             author: post['post_author'],
             content: post['post_content'],
-            image: post['post_image_full']
+            image: post['post_image_full'],
+            url: post['post_site_referrer']['siteurl']
           }
         ]
 

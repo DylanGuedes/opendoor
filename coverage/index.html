@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-28T20:34:00-02:00">2017-11-28T20:34:00-02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T07:18:21-02:00">2017-12-01T07:18:21-02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -143,7 +143,7 @@
       <tr>
         <td class="strong"><a href="#77a17612f6d0033f4fbee88ebe3e9b1730198837" class="src_link" title="app/models/news.rb">app/models/news.rb</a></td>
         <td class="red strong">66.67 %</td>
-        <td>77</td>
+        <td>79</td>
         <td>24</td>
         <td>16</td>
         <td>8</td>
@@ -183,7 +183,7 @@
       <tr>
         <td class="strong"><a href="#17fd2e51abac0b5f4110fce5340bc73c20e7b6e1" class="src_link" title="app/workers/catracalivre_gatherer_worker.rb">app/workers/catracalivre_gatherer_worker.rb</a></td>
         <td class="red strong">72.73 %</td>
-        <td>77</td>
+        <td>78</td>
         <td>33</td>
         <td>24</td>
         <td>9</td>
@@ -3316,340 +3316,352 @@
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">          Image =&gt; News&#39; image</code>
+          <code class="ruby">          Image =&gt; News&#39; image,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
           
           
+          <code class="ruby">          URL =&gt; News&#39; url</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
           <code class="ruby">        }</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="23">
+        <li class="covered" data-hits="3" data-linenumber="24">
           <span class="hits">3</span>
           
           <code class="ruby">      },</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="24">
-          
-          
-          <code class="ruby">    ]</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    ]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="27">
+        <li class="covered" data-hits="1" data-linenumber="28">
           <span class="hits">1</span>
           
           <code class="ruby">  def normalized_registration_data</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">    {</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="29">
           
           
-          <code class="ruby">      lat: self.lat,</code>
+          <code class="ruby">    {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="30">
           
           
-          <code class="ruby">      lon: self.lon,</code>
+          <code class="ruby">      lat: self.lat,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
           
           
-          <code class="ruby">      description: &quot;#{self.worker_uuid} news&quot;,</code>
+          <code class="ruby">      lon: self.lon,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby">      capabilities: [&#39;post&#39;],</code>
+          <code class="ruby">      description: &quot;#{self.worker_uuid} news&quot;,</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
           
           
+          <code class="ruby">      capabilities: [&#39;post&#39;],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="34">
+          
+          
           <code class="ruby">      status: &#39;active&#39;</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="34">
+        <li class="covered" data-hits="3" data-linenumber="35">
           <span class="hits">3</span>
           
           <code class="ruby">    }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="36">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.fetch entry</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="38">
+        <li class="missed" data-hits="0" data-linenumber="39">
           
           
           <code class="ruby">    if not entry[:post_id] or not entry[:platform_id]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="39">
+        <li class="missed" data-hits="0" data-linenumber="40">
           
           
           <code class="ruby">      raise &#39;Missing params post_id or platform_id&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="41">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">    {</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">      worker_uuid: entry[&#39;post_id&#39;],</code>
+          <code class="ruby">    {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
+          <code class="ruby">      worker_uuid: entry[&#39;post_id&#39;],</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="45">
+          
+          
           <code class="ruby">      platform_id: entry[&#39;platform_id&#39;]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
+        <li class="missed" data-hits="0" data-linenumber="46">
           
           
           <code class="ruby">    }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="46">
-          
-          
-          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="48">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
+        <li class="covered" data-hits="1" data-linenumber="49">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.mount_data_from entry</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
+        <li class="missed" data-hits="0" data-linenumber="50">
           
           
           <code class="ruby">    data = {}</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
+        <li class="missed" data-hits="0" data-linenumber="51">
           
           
           <code class="ruby">    data[:news] = [</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">      {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">        title: entry[&#39;post_title&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby">        content: entry[&#39;post_content&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby">        author: entry[&#39;post_author&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="55">
+        <li class="never" data-hits="" data-linenumber="56">
           
           
           <code class="ruby">        image: entry[&#39;post_image_full&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
-          
-          
-          <code class="ruby">        timestamp: DateTime.now.to_s</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">      }</code>
+          <code class="ruby">        url: entry[&#39;post_site_referrer&#39;][&#39;siteurl&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">    ]</code>
+          <code class="ruby">        timestamp: DateTime.now.to_s</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby">    data</code>
+          <code class="ruby">      }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
+          <code class="ruby">    ]</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="61">
+          
+          
+          <code class="ruby">    data</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="62">
+          
+          
           <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def self.mount_resource entry</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">    {</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      worker: News[:catracalivre_gatherer_worker],</code>
+          <code class="ruby">  def self.mount_resource entry</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">      worker_uuid: entry[&#39;post_id&#39;],</code>
+          <code class="ruby">    {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">      lat: entry[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[0],</code>
+          <code class="ruby">      worker: News[:catracalivre_gatherer_worker],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">      lon: entry[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[1],</code>
+          <code class="ruby">      worker_uuid: entry[&#39;post_id&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">      post_id: entry[&#39;post_id&#39;],</code>
+          <code class="ruby">      lat: entry[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[0],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">      platform_id: entry[&#39;platform_id&#39;],</code>
+          <code class="ruby">      lon: entry[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[1],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">      status: &#39;active&#39;</code>
+          <code class="ruby">      post_id: entry[&#39;post_id&#39;],</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="71">
+        <li class="never" data-hits="" data-linenumber="71">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">      platform_id: entry[&#39;platform_id&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
+          <code class="ruby">      status: &#39;active&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="73">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="74">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="75">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="74">
+        <li class="covered" data-hits="1" data-linenumber="76">
           <span class="hits">1</span>
           
           <code class="ruby">  def self.collection</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
+        <li class="missed" data-hits="0" data-linenumber="77">
           
           
           <code class="ruby">    :news</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="79">
           
           
           <code class="ruby">end</code>
@@ -5618,208 +5630,214 @@
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">            image: post[&#39;post_image_full&#39;]</code>
+          <code class="ruby">            image: post[&#39;post_image_full&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">          }</code>
+          <code class="ruby">            url: post[&#39;post_site_referrer&#39;][&#39;siteurl&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">        ]</code>
+          <code class="ruby">          }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
+          <code class="ruby">        ]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="47">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="47">
+        <li class="missed" data-hits="0" data-linenumber="48">
           
           
           <code class="ruby">        update_resource_data(resource, {data: new_data})</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">      when resource.count &gt; 1</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
+        <li class="missed" data-hits="0" data-linenumber="50">
           
           
           <code class="ruby">        raise &quot;Multiple resources for worker_uuid #{post[&#39;post_id&#39;]}&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="51">
           
           
           <code class="ruby">      when</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="51">
+        <li class="never" data-hits="" data-linenumber="52">
           
           
           <code class="ruby">        create_resource(post, platform_id)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
+        <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
         <li class="never" data-hits="" data-linenumber="54">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="56">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="56">
+        <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
           <code class="ruby">  def update_resource_data(resource, new_data)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="57">
+        <li class="missed" data-hits="0" data-linenumber="58">
           
           
           <code class="ruby">    resource.send_data(new_data)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="never" data-hits="" data-linenumber="60">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="60">
+        <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
           <code class="ruby">  def create_resource(post, platform_id)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="61">
+        <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
           <code class="ruby">    resource_data = {</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="63">
           
           
           <code class="ruby">      worker: News.workers[:catracalivre_gatherer_worker],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="63">
+        <li class="never" data-hits="" data-linenumber="64">
           
           
           <code class="ruby">      worker_uuid: post[&#39;post_id&#39;],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="64">
+        <li class="never" data-hits="" data-linenumber="65">
           
           
           <code class="ruby">      lat: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[0],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="never" data-hits="" data-linenumber="66">
           
           
           <code class="ruby">      lon: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[1],</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="never" data-hits="" data-linenumber="67">
           
           
           <code class="ruby">      status: &#39;active&#39;,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="67">
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">      platform_id: platform_id,</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="68">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">      post_id: post[&#39;post_id&#39;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="69">
+        <li class="never" data-hits="" data-linenumber="70">
           
           
           <code class="ruby">    }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="70">
+        <li class="covered" data-hits="1" data-linenumber="71">
           <span class="hits">1</span>
           
           <code class="ruby">    res = News.new(resource_data)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
+        <li class="covered" data-hits="1" data-linenumber="72">
           <span class="hits">1</span>
           
           <code class="ruby">    if res.save</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
+        <li class="covered" data-hits="1" data-linenumber="73">
           <span class="hits">1</span>
           
           <code class="ruby">      res.fetch_or_register</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="73">
+        <li class="never" data-hits="" data-linenumber="74">
           
           
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="74">
+        <li class="missed" data-hits="0" data-linenumber="75">
           
           
           <code class="ruby">      raise &quot;News not saved: #{post[&#39;post_id&#39;]}&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="75">
+        <li class="never" data-hits="" data-linenumber="76">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="77">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="78">
           
           
           <code class="ruby">end</code>
