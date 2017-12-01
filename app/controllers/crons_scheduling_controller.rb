@@ -11,6 +11,10 @@ class CronsSchedulingController < ApplicationController
     @platforms = Platform.all.map{|p| [p.url, p.id]}
   end
 
+  def catracalivre_cron_index
+    @platforms = Platform.all.map{|p| [p.url, p.id]}
+  end
+
   def cetesb_cron_activate
     interval = 5
     if params[:interval]
@@ -55,6 +59,22 @@ class CronsSchedulingController < ApplicationController
                                 class: 'AccuweatherGathererWorker',
                                 args: [params[:platform_id]])
       AccuweatherGathererWorker.turn_on
+    end
+    redirect_to resources_path
+  end
+
+  def catracalivre_cron_active
+    interval = 5
+    if params[:interval]
+      interval = params[:interval].to_i
+    end
+
+    if params[:platform_id]
+      Sidekiq::Cron::Job.create(name: 'Catraca livre cron',
+                                cron: "*/#{interval} * * * *",
+                                class: 'CatracalivreGathererWorker',
+                                args: [params[:platform_id]])
+      CatracalivreGathererWorker.turn_on
     end
     redirect_to resources_path
   end

@@ -27,6 +27,10 @@
       <a class="item" href="/resources/citybik_gatherer">
         Fetch Citybik Data
       </a>
+
+      <a class="item" href="/resources/catracalivre_gatherer">
+        Fetch Catraca Livre Data
+      </a>
     </div>
   </div>
 
@@ -70,6 +74,16 @@
           <i class="remove red icon"></i>
         <% end %>
       </a>
+
+      <a class="item" href="/catracalivre_cron_index">
+        Catraca Livre Cron
+        <% if CatracalivreGathererWorker.cron_running %>
+          <i class="green checkmark icon"></i>
+        <% else %>
+          <i class="remove red icon"></i>
+        <% end %>
+      </a>
+
     </div>
   </div>
 
