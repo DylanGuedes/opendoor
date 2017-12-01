@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T07:18:21-02:00">2017-12-01T07:18:21-02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-12-01T15:33:14-02:00">2017-12-01T15:33:14-02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">80.39%</span></span>
+    (<span class="covered_percent"><span class="yellow">80.11%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         21.35
+         21.1
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>32</b> files in total.
-    <b>561</b> relevant lines. 
-    <span class="green"><b>451</b> lines covered</span> and
-    <span class="red"><b>110</b> lines missed </span>
+    <b>568</b> relevant lines. 
+    <span class="green"><b>455</b> lines covered</span> and
+    <span class="red"><b>113</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -72,11 +72,11 @@
       
       <tr>
         <td class="strong"><a href="#9036fad094439da7e7f4ca68e576cef3ab2c6bc7" class="src_link" title="app/controllers/resources_controller.rb">app/controllers/resources_controller.rb</a></td>
-        <td class="yellow strong">87.1 %</td>
-        <td>62</td>
-        <td>31</td>
-        <td>27</td>
-        <td>4</td>
+        <td class="red strong">80.0 %</td>
+        <td>69</td>
+        <td>35</td>
+        <td>28</td>
+        <td>7</td>
         <td>1.1</td>
       </tr>
       
@@ -183,7 +183,7 @@
       <tr>
         <td class="strong"><a href="#17fd2e51abac0b5f4110fce5340bc73c20e7b6e1" class="src_link" title="app/workers/catracalivre_gatherer_worker.rb">app/workers/catracalivre_gatherer_worker.rb</a></td>
         <td class="red strong">72.73 %</td>
-        <td>78</td>
+        <td>82</td>
         <td>33</td>
         <td>24</td>
         <td>9</td>
@@ -363,9 +363,9 @@
       <tr>
         <td class="strong"><a href="#a52986925a50bb3650ad9a19e0a4a1c46ea349c1" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>26</td>
-        <td>22</td>
-        <td>22</td>
+        <td>29</td>
+        <td>25</td>
+        <td>25</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -667,11 +667,11 @@
         <div class="source_table" id="9036fad094439da7e7f4ca68e576cef3ab2c6bc7">
   <div class="header">
     <h3>app/controllers/resources_controller.rb</h3>
-    <h4><span class="yellow">87.1 %</span> covered</h4>
+    <h4><span class="red">80.0 %</span> covered</h4>
     <div>
-      <b>31</b> relevant lines. 
-      <span class="green"><b>27</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>35</b> relevant lines. 
+      <span class="green"><b>28</b> lines covered</span> and
+      <span class="red"><b>7</b> lines missed.</span>
     </div>
   </div>
   
@@ -687,7 +687,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  RESOURCE_TYPES = [Weather, BikeStation, AirQuality]</code>
+          <code class="ruby">  RESOURCE_TYPES = [Weather, BikeStation, AirQuality, News]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -714,8 +714,8 @@
           <code class="ruby">    RESOURCE_TYPES.each do |x|</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="7">
+          <span class="hits">4</span>
           
           <code class="ruby">      @resources += x.all</code>
         </li>
@@ -867,125 +867,125 @@
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">  def dump_recovery</code>
+          <code class="ruby">  def fetch_catracalivre_data</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="33">
           
-          <code class="ruby">    @platforms = Platform.all.map{|p| [p.url, p.id]}</code>
+          
+          <code class="ruby">    if cookies[:instance_id]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="34">
           
-          <code class="ruby">    @desired_resource = [ [&quot;Air Quality&quot;, &quot;AirQuality&quot;], [&quot;Weather&quot;, &quot;Weather&quot;], [&quot;BikeStation&quot;, &quot;BikeStation&quot;] ]</code>
+          
+          <code class="ruby">      CatracalivreGathererWorker.perform_async(cookies[:instance_id].to_i)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="35">
           
           
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="36">
+          
+          
+          <code class="ruby">    redirect_to resources_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="37">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="36">
+        <li class="never" data-hits="" data-linenumber="38">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
-          <code class="ruby">  def dump_and_inject</code>
+          <code class="ruby">  def dump_recovery</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="38">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
-          <code class="ruby">    SpDataWorker.perform_async(</code>
+          <code class="ruby">    @platforms = Platform.all.map{|p| [p.url, p.id]}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="39">
+        <li class="covered" data-hits="1" data-linenumber="41">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      params[:platform_id],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="40">
-          
-          
-          <code class="ruby">      &#39;mongodb://&#39;+params[:db_host],</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="41">
-          
-          
-          <code class="ruby">      params[:db_name],</code>
+          <code class="ruby">    @desired_resource = [ [&quot;Air Quality&quot;, &quot;AirQuality&quot;], [&quot;Weather&quot;, &quot;Weather&quot;], [&quot;BikeStation&quot;, &quot;BikeStation&quot;] ]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">      params[:resource_type]</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">    )</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">  def dump_and_inject</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="45">
           <span class="hits">1</span>
           
-          <code class="ruby">    redirect_to resources_path</code>
+          <code class="ruby">    SpDataWorker.perform_async(</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      params[:platform_id],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      &#39;mongodb://&#39;+params[:db_host],</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="48">
           
-          <code class="ruby">  def register_initiative</code>
+          
+          <code class="ruby">      params[:db_name],</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
+        <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">    if params[:instance_id]</code>
+          <code class="ruby">      params[:resource_type]</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">      InitiativeRegistrationWorker.perform_async(initiative_params, params[:instance_id])</code>
+          <code class="ruby">    )</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="52">
-          
+        <li class="covered" data-hits="1" data-linenumber="52">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to resources_path</code>
         </li>
@@ -1005,46 +1005,88 @@
         <li class="covered" data-hits="1" data-linenumber="55">
           <span class="hits">1</span>
           
-          <code class="ruby">  private</code>
+          <code class="ruby">  def register_initiative</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="missed" data-hits="0" data-linenumber="56">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">    if params[:instance_id]</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="57">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="57">
           
-          <code class="ruby">  def initiative_params</code>
+          
+          <code class="ruby">      InitiativeRegistrationWorker.perform_async(initiative_params, params[:instance_id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">    params.require(:initiative).permit(:name, :state, :responsible_phone,</code>
+          <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="59">
+        <li class="missed" data-hits="0" data-linenumber="59">
           
           
-          <code class="ruby">                                       :responsible, :responsible_email, :city,</code>
+          <code class="ruby">    redirect_to resources_path</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
           
           
-          <code class="ruby">                                       :address, :institution, :lat, :lon)</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="61">
           
           
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="62">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initiative_params</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="65">
+          
+          
+          <code class="ruby">    params.require(:initiative).permit(:name, :state, :responsible_phone,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">                                       :responsible, :responsible_email, :city,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby">                                       :address, :institution, :lat, :lon)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="62">
+        <li class="never" data-hits="" data-linenumber="69">
           
           
           <code class="ruby">end</code>
@@ -3334,7 +3376,7 @@
         <li class="covered" data-hits="3" data-linenumber="24">
           <span class="hits">3</span>
           
-          <code class="ruby">      },</code>
+          <code class="ruby">      }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
@@ -3388,7 +3430,7 @@
         <li class="never" data-hits="" data-linenumber="33">
           
           
-          <code class="ruby">      capabilities: [&#39;post&#39;],</code>
+          <code class="ruby">      capabilities: [&#39;news&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -3532,7 +3574,7 @@
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">        url: entry[&#39;post_site_referrer&#39;][&#39;siteurl&#39;],</code>
+          <code class="ruby">        url: entry[&#39;post_permalink&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
@@ -5492,7 +5534,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">    url = BASE_URL + &quot;/select/?q=places_cidades.id:#{CITY_ID} AND&quot;\</code>
+          <code class="ruby">    url = BASE_URL + &quot;/select/?q=place_cidades.id:#{CITY_ID} AND&quot;\</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
@@ -5507,58 +5549,58 @@
           <code class="ruby">    response = JSON.parse(RestClient.get(url))</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    docs = response[&#39;response&#39;][&#39;docs&#39;]</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="24">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    docs.each do |post|</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="25">
-          <span class="hits">1</span>
-          
-          <code class="ruby">      attrs = {</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">        platform_id: platform_id,</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">        worker_uuid: post[&#39;post_id&#39;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">      }</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
+        <li class="never" data-hits="" data-linenumber="23">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="30">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby">      puts &quot;Loading resource #{attrs} ...&quot;</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="31">
+        <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
-          <code class="ruby">      resource = News.where(attrs)</code>
+          <code class="ruby">    docs = response[&#39;response&#39;][&#39;docs&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    docs.each do |post|</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      attrs = {</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">        platform_id: platform_id,</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby">        worker_uuid: post[&#39;post_id&#39;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
+          
+          
+          <code class="ruby">      }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="32">
@@ -5567,160 +5609,160 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="33">
+        <li class="covered" data-hits="1" data-linenumber="33">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      case</code>
+          <code class="ruby">      puts &quot;Loading resource #{attrs} ...&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="34">
+        <li class="covered" data-hits="1" data-linenumber="34">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      when resource.count == 1</code>
+          <code class="ruby">      resource = News.where(attrs)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="35">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
-          <code class="ruby">        resource = resource.first</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="36">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">      case</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="37">
+        <li class="never" data-hits="" data-linenumber="37">
           
           
-          <code class="ruby">        new_data = {}</code>
+          <code class="ruby">      when resource.count == 1</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="38">
           
           
-          <code class="ruby">        new_data[:news] = [</code>
+          <code class="ruby">        resource = resource.first</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
           
           
-          <code class="ruby">          {</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="missed" data-hits="0" data-linenumber="40">
           
           
-          <code class="ruby">            title: post[&#39;post_title&#39;],</code>
+          <code class="ruby">        new_data = {}</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="missed" data-hits="0" data-linenumber="41">
           
           
-          <code class="ruby">            author: post[&#39;post_author&#39;],</code>
+          <code class="ruby">        new_data[:news] = [</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="42">
           
           
-          <code class="ruby">            content: post[&#39;post_content&#39;],</code>
+          <code class="ruby">          {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="43">
           
           
-          <code class="ruby">            image: post[&#39;post_image_full&#39;],</code>
+          <code class="ruby">            title: post[&#39;post_title&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">            url: post[&#39;post_site_referrer&#39;][&#39;siteurl&#39;]</code>
+          <code class="ruby">            author: post[&#39;post_author&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
           
           
-          <code class="ruby">          }</code>
+          <code class="ruby">            content: post[&#39;post_content&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="46">
           
           
-          <code class="ruby">        ]</code>
+          <code class="ruby">            image: post[&#39;post_image_full&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="47">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">            url: post[&#39;post_permalink&#39;],</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
+        <li class="never" data-hits="" data-linenumber="48">
           
           
-          <code class="ruby">        update_resource_data(resource, {data: new_data})</code>
+          <code class="ruby">            timestamp: Time.now.getutc.to_s</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
           
           
-          <code class="ruby">      when resource.count &gt; 1</code>
+          <code class="ruby">          }</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
+        <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">        raise &quot;Multiple resources for worker_uuid #{post[&#39;post_id&#39;]}&quot;</code>
+          <code class="ruby">        ]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">      when</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="missed" data-hits="0" data-linenumber="52">
           
           
-          <code class="ruby">        create_resource(post, platform_id)</code>
+          <code class="ruby">        update_resource_data(resource, {data: new_data})</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="53">
           
-          <code class="ruby">      end</code>
+          
+          <code class="ruby">      when resource.count &gt; 1</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="missed" data-hits="0" data-linenumber="54">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">        raise &quot;Multiple resources for worker_uuid #{post[&#39;post_id&#39;]}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">      when</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">        create_resource(post, platform_id)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="57">
           <span class="hits">1</span>
           
-          <code class="ruby">  def update_resource_data(resource, new_data)</code>
+          <code class="ruby">      end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="58">
+        <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">    resource.send_data(new_data)</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
@@ -5738,106 +5780,130 @@
         <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
-          <code class="ruby">  def create_resource(post, platform_id)</code>
+          <code class="ruby">  def update_resource_data(resource, new_data)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="62">
-          <span class="hits">1</span>
+        <li class="missed" data-hits="0" data-linenumber="62">
           
-          <code class="ruby">    resource_data = {</code>
+          
+          <code class="ruby">    resource.send_data(new_data)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">      worker: News.workers[:catracalivre_gatherer_worker],</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">      worker_uuid: post[&#39;post_id&#39;],</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="65">
+        <li class="covered" data-hits="1" data-linenumber="65">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      lat: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[0],</code>
+          <code class="ruby">  def create_resource(post, platform_id)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="66">
+        <li class="covered" data-hits="1" data-linenumber="66">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">      lon: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[1],</code>
+          <code class="ruby">    resource_data = {</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
-          <code class="ruby">      status: &#39;active&#39;,</code>
+          <code class="ruby">      worker: News.workers[:catracalivre_gatherer_worker],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="68">
           
           
-          <code class="ruby">      platform_id: platform_id,</code>
+          <code class="ruby">      worker_uuid: post[&#39;post_id&#39;],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="69">
           
           
-          <code class="ruby">      post_id: post[&#39;post_id&#39;]</code>
+          <code class="ruby">      lat: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[0],</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="70">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">      lon: post[&#39;place_geolocation&#39;][0].split(&#39;,&#39;)[1],</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="71">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="71">
           
-          <code class="ruby">    res = News.new(resource_data)</code>
+          
+          <code class="ruby">      status: &#39;active&#39;,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="72">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="72">
           
-          <code class="ruby">    if res.save</code>
+          
+          <code class="ruby">      platform_id: platform_id,</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="73">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="73">
           
-          <code class="ruby">      res.fetch_or_register</code>
+          
+          <code class="ruby">      post_id: post[&#39;post_id&#39;]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
           
           
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="75">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    res = News.new(resource_data)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="76">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    if res.save</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="77">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      res.fetch_or_register</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="75">
+        <li class="missed" data-hits="0" data-linenumber="79">
           
           
           <code class="ruby">      raise &quot;News not saved: #{post[&#39;post_id&#39;]}&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="76">
+        <li class="never" data-hits="" data-linenumber="80">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="77">
+        <li class="never" data-hits="" data-linenumber="81">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="78">
+        <li class="never" data-hits="" data-linenumber="82">
           
           
           <code class="ruby">end</code>
@@ -9056,8 +9122,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>22</b> relevant lines. 
-      <span class="green"><b>22</b> lines covered</span> and
+      <b>25</b> relevant lines. 
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -9164,58 +9230,76 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/resources/active_cetesb_cron&#39;, to: &#39;resources#active_cetesb_cron&#39;</code>
+          <code class="ruby">  get &#39;/resources/catracalivre_gatherer&#39;, to: &#39;resources#fetch_catracalivre_data&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/dump_recovery&#39;, to: &#39;resources#dump_recovery&#39;</code>
+          <code class="ruby">  get &#39;/resources/active_cetesb_cron&#39;, to: &#39;resources#active_cetesb_cron&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="19">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/cetesb_cron_index&#39;, to: &#39;crons_scheduling#cetesb_cron_index&#39;</code>
+          <code class="ruby">  get &#39;/dump_recovery&#39;, to: &#39;resources#dump_recovery&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/accuweather_cron_index&#39;, to: &#39;crons_scheduling#accuweather_cron_index&#39;</code>
+          <code class="ruby">  get &#39;/cetesb_cron_index&#39;, to: &#39;crons_scheduling#cetesb_cron_index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  get &#39;/citybik_cron_index&#39;, to: &#39;crons_scheduling#citybik_cron_index&#39;</code>
+          <code class="ruby">  get &#39;/accuweather_cron_index&#39;, to: &#39;crons_scheduling#accuweather_cron_index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="22">
           <span class="hits">1</span>
           
-          <code class="ruby">  post &#39;/cetesb_cron_activate&#39;, to: &#39;crons_scheduling#cetesb_cron_activate&#39;</code>
+          <code class="ruby">  get &#39;/citybik_cron_index&#39;, to: &#39;crons_scheduling#citybik_cron_index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="23">
           <span class="hits">1</span>
           
-          <code class="ruby">  post &#39;/accuweather_cron_activate&#39;, to: &#39;crons_scheduling#accuweather_cron_activate&#39;</code>
+          <code class="ruby">  get &#39;/catracalivre_cron_index&#39;, to: &#39;crons_scheduling#catracalivre_cron_index&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="24">
           <span class="hits">1</span>
           
-          <code class="ruby">  post &#39;/citybik_cron_activate&#39;, to: &#39;crons_scheduling#citybik_cron_activate&#39;</code>
+          <code class="ruby">  post &#39;/cetesb_cron_activate&#39;, to: &#39;crons_scheduling#cetesb_cron_activate&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="25">
           <span class="hits">1</span>
           
+          <code class="ruby">  post &#39;/accuweather_cron_activate&#39;, to: &#39;crons_scheduling#accuweather_cron_activate&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  post &#39;/citybik_cron_activate&#39;, to: &#39;crons_scheduling#citybik_cron_activate&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="27">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  post &#39;/catracalivre_cron_activate&#39;, to: &#39;crons_scheduling#catracalivre_cron_activate&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="28">
+          <span class="hits">1</span>
+          
           <code class="ruby">  post &#39;/dump_and_inject&#39;, to: &#39;resources#dump_and_inject&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="26">
+        <li class="never" data-hits="" data-linenumber="29">
           
           
           <code class="ruby">end</code>

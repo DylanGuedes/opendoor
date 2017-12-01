@@ -143,7 +143,7 @@ module InterscityMocks
       }
     }.to_json
 
-    url = "https://api.catracalivre.com.br/select/?q=places_cidades.id:9668"\
+    url = "https://api.catracalivre.com.br/select/?q=place_cidades.id:9668"\
                   " AND post_publish_date:[NOW-5DAYS TO NOW]&wt=json"
     stub_request(:get, url).
       with{|request| not request.headers.blank?}.
