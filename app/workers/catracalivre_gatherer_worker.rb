@@ -44,7 +44,8 @@ class CatracalivreGathererWorker
             author: post['post_author'],
             content: post['post_content'],
             image: post['post_image_full'],
-            url: post['post_site_referrer']['siteurl']
+            url: post['post_permalink'],
+            timestamp: Time.now.getutc.to_s
           }
         ]
 

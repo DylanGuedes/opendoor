@@ -54,7 +54,7 @@ class News < ApplicationRecord
         content: entry['post_content'],
         author: entry['post_author'],
         image: entry['post_image_full'],
-        url: entry['post_site_referrer']['siteurl'],
+        url: entry['post_permalink'],
         timestamp: DateTime.now.to_s
       }
     ]
