@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  RESOURCE_TYPES = [Weather, BikeStation, AirQuality]
+  RESOURCE_TYPES = [Weather, BikeStation, AirQuality, News]
 
   def index
     @resources = []
@@ -25,6 +25,13 @@ class ResourcesController < ApplicationController
   def fetch_accuweather_data
     if cookies[:instance_id]
       AccuweatherGathererWorker.perform_async(cookies[:instance_id].to_i)
+    end
+    redirect_to resources_path
+  end
+
+  def fetch_catracalivre_data
+    if cookies[:instance_id]
+      CatracalivreGathererWorker.perform_async(cookies[:instance_id].to_i)
     end
     redirect_to resources_path
   end

@@ -83,6 +83,73 @@ module InterscityMocks
     end
   end
 
+  def soft_stub_catracalivre_request
+    data =
+    {
+      responseHeader: {
+        status: 0,
+        QTime: 1,
+        params: {
+          q: "place_cidades.id:9668 AND post_publish_date:[NOW-5DAYS TO NOW]",
+          wt: "json"
+        }
+      },
+      response: {
+        numFound: 18,
+        start: 0,
+        docs: [
+          {
+            post_id: 802141,
+            post_title: "Catraca livre title",
+            post_type: "event",
+            post_publish_date: "2017-11-28T15:39:30Z",
+            post_author: "author",
+            post_content: "content",
+            post_excerpt: "excerpt",
+            post_image_thumbnail: "url thumbnail",
+            post_image_full: "url full image",
+            post_image_sizes: "[]",
+            post_permalink: "permalink",
+            post_sitecode: ["sp"],
+            post_site_referrer: "{}",
+            site_id: 9,
+            id: "802141-9",
+            place_name: [ "place name" ],
+            place_city: [ "city name"  ],
+            place_type: [ "Trem"       ],
+            place_type_slug: [ "slug"  ],
+            place_geolocation: ["-23.0,-46.0" ],
+            place_neighborhood: [ "Neighbourhood" ],
+            place_zone: [ "" ],
+            place_mesoregion: [ "region" ],
+            'place_paises.id': [  32       ],
+            'place_estados.id': [ 53       ],
+            'place_cidades.id': [  9668    ],
+            'place_bairros.id': [  26312   ],
+            'place_logradouros.id': [ 594313 ],
+            event_place: [   ],
+            event_agenda: [  ],
+            event_agenda_slug: [  ],
+            post_category: [  ],
+            post_category_slug: [  ],
+            post_tag: [ ],
+            post_tag_slug: [ ],
+            event_price: "Catraca Livre",
+            event_datetime: [ "2017-12-03T12:00:00Z" ],
+            event_time_human: [  "&agrave;s 12:00"   ],
+            place_id: [ 314057 ]
+          }
+        ]
+      }
+    }.to_json
+
+    url = "https://api.catracalivre.com.br/select/?q=place_cidades.id:9668"\
+                  " AND post_publish_date:[NOW-5DAYS TO NOW]&wt=json"
+    stub_request(:get, url).
+      with{|request| not request.headers.blank?}.
+      to_return(status: 200, body: data, headers: {'Content-Type': 'text/html'})
+  end
+
   def soft_stub_citybik_request
     data = {
       network: {

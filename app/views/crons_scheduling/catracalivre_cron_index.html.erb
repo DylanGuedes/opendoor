@@ -1,0 +1,21 @@
+<h1>Catraca Livre Cron Scheduling</h1>
+
+<div class="ui form">
+  <%= form_tag("/catracalivre_cron_activate", method: 'post') do %>
+
+    <div class="ui field">
+      <label>Platform Instance</label>
+
+      <div class="ui input">
+        <%= select_tag :platform_id, options_for_select(@platforms) %>
+      </div>
+    </div>
+
+    <div class="ui field">
+      <label>Collect Interval (in minutes)</label>
+      <%= text_field_tag(:interval, nil, placeholder: "Example: 5") %>
+    </div>
+
+    <%= submit_tag("Schedule", class: "ui green button") %>
+  <% end %>
+</div>
