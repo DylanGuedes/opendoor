@@ -17,10 +17,13 @@ class CatracalivreGathererWorker
 
   def perform(platform_id)
     platform = Platform.find(platform_id)
-    url = BASE_URL + "/select/?q=places_cidades.id:#{CITY_ID} AND"\
+    url = BASE_URL + "/select/?q=place_cidades.id:#{CITY_ID} AND"\
             " post_publish_date:[NOW-#{DAYS_TO_MONITORING}DAYS TO NOW]&wt=json"
     response = JSON.parse(RestClient.get(url))
+
+
     docs = response['response']['docs']
+
     docs.each do |post|
       attrs = {
         platform_id: platform_id,
