@@ -21,7 +21,7 @@ class News < ApplicationRecord
           Image => News' image,
           URL => News' url
         }
-      },
+      }
     ]
   end
 
@@ -30,7 +30,7 @@ class News < ApplicationRecord
       lat: self.lat,
       lon: self.lon,
       description: "#{self.worker_uuid} news",
-      capabilities: ['post'],
+      capabilities: ['news'],
       status: 'active'
     }
   end
